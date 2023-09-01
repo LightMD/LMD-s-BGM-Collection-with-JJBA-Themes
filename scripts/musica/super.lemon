@@ -1,0 +1,249 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == MUSIC_SUPER)
+	{
+		if (supra == 00 || supra == 01)
+		{
+			if (supra == 01)
+			{
+				Standalone.setFastMusicFlag(FastMusicFlag.SUPER_THEME, true)
+			}
+			if (!Audio.isPlayingAudio(level.default_music.u8) && level.default_music.u8 != sfxId)
+			{
+				Standalone.playAudio(level.default_music.u8)
+			}
+		}
+		if (supra == 02)
+		{
+			soundkey = "supertheme_sonic2"
+		}
+		else if (supra == 03)
+		{
+			soundkey = "super-sa2"
+		}
+		else if (supra == 04)
+		{
+			soundkey = "2e_proto"
+		}
+		else if (supra == 05)
+		{
+			soundkey = "super-06"
+		}
+		else if (supra == 06)
+		{
+			soundkey = "2C-colors"
+		}
+		else if (supra == 07)
+		{
+			soundkey = "super-cu"
+		}
+		else if (supra == 08)
+		{
+			soundkey = "super-s4"
+		}
+		else if (supra == 09)
+		{
+			soundkey = "super-wii"
+		}
+		else if (supra == 10)
+		{
+			soundkey = "super-lw"
+		}
+		else if (supra == 11)
+		{
+			soundkey = "super-pb"
+		}
+		else if (supra == 12)
+		{
+			soundkey = "super-bt"
+		}
+		else if (supra == 13)
+		{
+			soundkey = "super-sc"
+		}
+		else if (supra == 14)
+		{
+			soundkey = "super-diu"
+		}
+		else if (supra == 15)
+		{
+			soundkey = "super-va"
+		}
+		else if (supra == 16)
+		{
+			soundkey = "super-so"
+		}
+		else if (supra == 17)
+		{
+			soundkey = "2c"
+		}
+		else if (supra == 18)
+		{
+			soundkey = "2c-e"
+		}
+		else if (supra == 19)
+		{
+			soundkey = "2c-sa2"
+		}
+		else if (supra == 20)
+		{
+			soundkey = "2c-heroes"
+		}
+		else if (supra == 21)
+		{
+			soundkey = "2c-adv"
+		}
+		else if (supra == 22)
+		{
+			soundkey = "2c-riders"
+		}
+		else if (supra == 23)
+		{
+			soundkey = "2c-lw"
+		}
+		else if (supra == 24)
+		{
+			soundkey = "2c-run"
+		}
+		else if (supra == 99)
+		{
+			soundkey = "20"
+		}
+	}
+    return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == MUSIC_SUPER)
+	{
+		if (global.zone_act.apparent == 0x0601) // Because this dingus didn't want to work in LBZ2
+		{
+			{
+				if (supra == 00 || supra == 01)
+				{
+					if (supra == 01)
+					{
+						Standalone.setFastMusicFlag(FastMusicFlag.SUPER_THEME, true)
+					}
+					if (!Audio.isPlayingAudio(level.default_music.u8) && level.default_music.u8 != sfxId)
+					{
+						Standalone.playAudio(level.default_music.u8)
+					}
+				}
+				if (supra == 02)
+				{
+					soundkey = "supertheme_sonic2"
+				}
+				else if (supra == 03)
+				{
+					soundkey = "super-sa2"
+				}
+				else if (supra == 04)
+				{
+					soundkey = "2e_proto"
+				}
+				else if (supra == 05)
+				{
+					soundkey = "super-06"
+				}
+				else if (supra == 06)
+				{
+					soundkey = "2C-colors"
+				}
+				else if (supra == 07)
+				{
+					soundkey = "super-cu"
+				}
+				else if (supra == 08)
+				{
+					soundkey = "super-s4"
+				}
+				else if (supra == 09)
+				{
+					soundkey = "super-wii"
+				}
+				else if (supra == 10)
+				{
+					soundkey = "super-lw"
+				}
+				else if (supra == 11)
+				{
+					soundkey = "super-pb"
+				}
+				else if (supra == 12)
+				{
+					soundkey = "super-bt"
+				}
+				else if (supra == 13)
+				{
+					soundkey = "super-sc"
+				}
+				else if (supra == 14)
+				{
+					soundkey = "super-diu"
+				}
+				else if (supra == 15)
+				{
+					soundkey = "super-va"
+				}
+				else if (supra == 16)
+				{
+					soundkey = "super-so"
+				}
+				else if (supra == 17)
+				{
+					soundkey = "2c"
+				}
+				else if (supra == 18)
+				{
+					soundkey = "2c-e"
+				}
+				else if (supra == 19)
+				{
+					soundkey = "2c-sa2"
+				}
+				else if (supra == 20)
+				{
+					soundkey = "2c-heroes"
+				}
+				else if (supra == 21)
+				{
+					soundkey = "2c-adv"
+				}
+				else if (supra == 22)
+				{
+					soundkey = "2c-riders"
+				}
+				else if (supra == 23)
+				{
+					soundkey = "2c-lw"
+				}
+				else if (supra == 24)
+				{
+					soundkey = "2c-run"
+				}
+				else if (supra == 99)
+				{
+					soundkey = "20"
+				}
+			}
+		}
+	}
+	return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

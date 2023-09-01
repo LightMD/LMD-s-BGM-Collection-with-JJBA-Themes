@@ -1,0 +1,708 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+function u64 setMechaMusic(u8 sfxId) // Mecha S1 and S2
+{
+	u64 soundkey
+	if (sfxId == MUSIC_BOSS_S1)
+	{
+		if (faker == 0)
+		{
+			return "chaos"
+		}
+		else if (faker == 1)
+		{
+			return "sonic1_boss"
+		}
+		else if (faker == 2)
+		{
+			return "sa2-s1"
+		}
+		else if (faker == 3)
+		{
+			return "rush-s1"
+		}
+		else if (faker == 4)
+		{
+			return "su-nite"
+		}
+		else if (faker == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == MUSIC_BOSS_S2)
+	{
+		if (faker == 0)
+		{
+			return "chaos"
+		}
+		else if (faker == 1)
+		{
+			return "sonic2_boss"
+		}
+		else if (faker == 2)
+		{
+			return "sa2-s2"
+		}
+		else if (faker == 3)
+		{
+			return "rush-s2"
+		}
+		else if (faker == 4)
+		{
+			return "su-day"
+		}
+		else if (faker == 99)
+		{
+			return "20"
+		}
+	}
+	return soundkey
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0x30) // Final Boss
+    {
+
+        if (global.zone_act.apparent == 0x0601) // LBZ2
+        {
+            if (bigarms == 0)
+            {
+                return "30-barms"
+            }
+			else if (bigarms == 2)
+			{
+				return "30-draco"
+			}
+			else if (bigarms == 99)
+			{
+				return "20"
+			}
+        }
+        if (global.zone == 0x0a) // SSZ
+        {
+            if (meccanico == 0)
+            {
+                return "30-mecha"
+            }
+			else if (meccanico == 1)
+			{
+				return "30-same"
+			}
+			else if (meccanico == 99)
+			{
+				return "20"
+			}
+		}
+        else // DEZ
+        {
+			if (dezrob == 1)
+            {
+                return "30-su"
+            }
+            if (dezrob == 2)
+            {
+                return "30-sc"
+            }
+			else if (dezrob == 3)
+            {
+                return "30-egg"
+            }
+			else if (dezrob == 99)
+			{
+				return "20"
+			}
+        }
+    }
+	else if (sfxId == 0x18) // SK Miniboss
+	{
+		if (piccolino == 0)
+		{
+			return "t-series"
+		}
+		else if (piccolino == 1)
+		{
+			return "gun"
+		}
+		else if (piccolino == 2)
+		{
+			return "18"
+		}
+		else if (piccolino == 3)
+		{
+			return "2e_sonic3"
+		}
+		else if (piccolino == 4)
+		{
+			return "lollipop"
+		}
+		else if (piccolino == 5)
+		{
+			return "colori"
+		}
+		else if (piccolino == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x2e) // S3 Miniboss
+	{
+		if (piccolino == 0)
+		{
+			return "t-series"
+		}
+		else if (piccolino == 1)
+		{
+			return "gun"
+		}
+		else if (piccolino == 2)
+		{
+			return "18"
+		}
+		else if (piccolino == 3)
+		{
+			return "2e_sonic3"
+		}
+		else if (piccolino == 4)
+		{
+			return "lollipop"
+		}
+		else if (piccolino == 5)
+		{
+			return "colori"
+		}
+		else if (piccolino == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x19) // Act 2 Boss
+	{
+		if (theboss == 0)
+		{
+			if (global.zone_act.apparent == 0x0a00)
+			{
+				if (meccanico == 0)
+				{
+					return "30-mecha"
+				}
+				else if (meccanico == 1)
+				{
+					return "30-same"
+				}
+				else if (meccanico == 2)
+				{
+					return "30"
+				}
+				else if (meccanico == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				if (golem == 0)
+				{
+					return "sandman"
+				}
+				else if (golem == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				if (stromboli == 0)
+				{
+					return "emperor"
+				}
+				else if (stromboli == 1)
+				{
+					return "emperor-gens"
+				}
+				else if (stromboli == 2)
+				{
+					return "adv3"
+				}
+				else if (stromboli == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0b01) // DEZ2 Boss
+			{
+				if (ligma == 0)
+				{
+					return "cd-boss"
+				}
+				else if (ligma == 1)
+				{
+					return "adv3"
+				}
+				else if (ligma == 2)
+				{
+					return "maniac"
+				}
+				else if (ligma == 99)
+				{
+					return "20"
+				}
+			}
+			else
+			{
+				return "19"
+			}
+		}
+		else if (theboss == 1)
+		{
+			if (global.zone_act.apparent == 0x0a00)
+			{
+				if (meccanico == 0)
+				{
+					return "30-mecha"
+				}
+				else if (meccanico == 1)
+				{
+					return "30-same"
+				}
+				else if (meccanico == 2)
+				{
+					return "30"
+				}
+				else if (meccanico == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				if (golem == 0)
+				{
+					return "sandman"
+				}
+				else if (golem == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				if (stromboli == 0)
+				{
+					return "emperor"
+				}
+				else if (stromboli == 1)
+				{
+					return "emperor-gens"
+				}
+				else if (stromboli == 2)
+				{
+					return "adv3"
+				}
+				else if (stromboli == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0b01) // DEZ2 Boss
+			{
+				if (ligma == 0)
+				{
+					return "cd-boss"
+				}
+				else if (ligma == 1)
+				{
+					return "adv3"
+				}
+				else if (ligma == 2)
+				{
+					return "maniac"
+				}
+				else if (ligma == 99)
+				{
+					return "20"
+				}
+			}
+			else
+			{
+				return "su-day"
+			}
+		}
+		else if (theboss == 2)
+		{
+			if (global.zone_act.apparent == 0x0a00)
+			{
+				if (meccanico == 0)
+				{
+					return "30-mecha"
+				}
+				else if (meccanico == 1)
+				{
+					return "30-same"
+				}
+				else if (meccanico == 2)
+				{
+					return "30"
+				}
+				else if (meccanico == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				if (golem == 0)
+				{
+					return "sandman"
+				}
+				else if (golem == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				if (stromboli == 0)
+				{
+					return "emperor"
+				}
+				else if (stromboli == 1)
+				{
+					return "emperor-gens"
+				}
+				else if (stromboli == 2)
+				{
+					return "adv3"
+				}
+				else if (stromboli == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0b01) // DEZ2 Boss
+			{
+				if (ligma == 0)
+				{
+					return "cd-boss"
+				}
+				else if (ligma == 1)
+				{
+					return "adv3"
+				}
+				else if (ligma == 2)
+				{
+					return "maniac"
+				}
+				else if (ligma == 99)
+				{
+					return "20"
+				}
+			}
+			else
+			{
+				return "su-nite"
+			}
+		}
+		else if (theboss == 3)
+		{
+			if (global.zone_act.apparent == 0x0a00)
+			{
+				if (meccanico == 0)
+				{
+					return "30-mecha"
+				}
+				else if (meccanico == 1)
+				{
+					return "30-same"
+				}
+				else if (meccanico == 2)
+				{
+					return "30"
+				}
+				else if (meccanico == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				if (golem == 0)
+				{
+					return "sandman"
+				}
+				else if (golem == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				if (stromboli == 0)
+				{
+					return "emperor"
+				}
+				else if (stromboli == 1)
+				{
+					return "emperor-gens"
+				}
+				else if (stromboli == 2)
+				{
+					return "adv3"
+				}
+				else if (stromboli == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0b01) // DEZ2 Boss
+			{
+				if (ligma == 0)
+				{
+					return "cd-boss"
+				}
+				else if (ligma == 1)
+				{
+					return "adv3"
+				}
+				else if (ligma == 2)
+				{
+					return "maniac"
+				}
+				else if (ligma == 99)
+				{
+					return "20"
+				}
+			}
+			else
+			{
+				return "run-boss"
+			}
+		}
+		else if (theboss == 99)
+		{
+			if (global.zone_act.apparent == 0x0a00)
+			{
+				if (meccanico == 0)
+				{
+					return "30-mecha"
+				}
+				else if (meccanico == 1)
+				{
+					return "30-same"
+				}
+				else if (meccanico == 2)
+				{
+					return "30"
+				}
+				else if (meccanico == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				if (golem == 0)
+				{
+					return "sandman"
+				}
+				else if (golem == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				if (stromboli == 0)
+				{
+					return "emperor"
+				}
+				else if (stromboli == 1)
+				{
+					return "emperor-gens"
+				}
+				else if (stromboli == 2)
+				{
+					return "adv3"
+				}
+				else if (stromboli == 99)
+				{
+					return "20"
+				}
+			}
+			else if (global.zone_act.apparent == 0x0b01) // DEZ2 Boss
+			{
+				if (ligma == 0)
+				{
+					return "cd-boss"
+				}
+				else if (ligma == 1)
+				{
+					return "adv3"
+				}
+				else if (ligma == 2)
+				{
+					return "maniac"
+				}
+				else if (ligma == 99)
+				{
+					return "20"
+				}
+			}
+			else
+			{
+				return "20"
+			}
+		}
+	}
+	else if (sfxId == 0x1a)
+	{
+		if (global.zone_act.apparent == 0x0c00) // DDZ
+		{
+			if (chaos == 1)
+			{
+				return "1a-sa2"
+			}
+			else if (chaos == 2)
+			{
+				return "1a-su"
+			}
+			else if (chaos == 3)
+			{
+				return "sono"
+			}
+			else if (chaos == 4)
+			{
+				return "coda"
+			}
+			else if (chaos == 5)
+			{
+				return "baby-stando"
+			}
+			else if (chaos == 6)
+			{
+				return "units"
+			}
+			else if (chaos == 7)
+			{
+				return "vento"
+			}
+			else if (chaos == 8)
+			{
+				return "wake-up"
+			}
+			else if (chaos == 99)
+			{
+				return "20"
+			}
+		}
+		else if (global.zone_act.apparent == 0x0a01) // Super Mecha, Knuckles SSZ
+		{
+			if (biatch == 1)
+			{
+				return "1a-sa2"
+			}
+			else if (biatch == 2)
+			{
+				return "techscammer"
+			}
+			else if (biatch == 3)
+			{
+				return "sono"
+			}
+			else if (biatch == 4)
+			{
+				return "coda"
+			}
+			else if (biatch == 5)
+			{
+				return "baby-stando"
+			}
+			else if (biatch == 6)
+			{
+				return "units"
+			}
+			else if (biatch == 7)
+			{
+				return "vento"
+			}
+			else if (biatch == 8)
+			{
+				return "wake-up"
+			}
+			else if (biatch == 99)
+			{
+				return "20"
+			}
+		}
+	}
+	else if (sfxId == MUSIC_BOSS_S1) // Sonic 1 Mecha
+	{
+		if (faker == 0)
+		{
+			return "chaos"
+		}
+		else if (faker == 1)
+		{
+			return "sonic1_boss"
+		}
+		else if (faker == 2)
+		{
+			return "sa2-s1"
+		}
+		else if (faker == 3)
+		{
+			return "rush-s1"
+		}
+		else if (faker == 4)
+		{
+			return "su-nite"
+		}
+		else if (faker == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == MUSIC_BOSS_S2) // Sonic 2 Mecha
+	{
+		if (faker == 0)
+		{
+			return "chaos"
+		}
+		else if (faker == 1)
+		{
+			return "sonic2_boss"
+		}
+		else if (faker == 2)
+		{
+			return "sa2-s2"
+		}
+		else if (faker == 3)
+		{
+			return "rush-s2"
+		}
+		else if (faker == 4)
+		{
+			return "su-day"
+		}
+		else if (faker == 99)
+		{
+			return "20"
+		}
+	}
+	return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

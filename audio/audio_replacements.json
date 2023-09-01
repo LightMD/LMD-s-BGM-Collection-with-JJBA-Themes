@@ -1,0 +1,518 @@
+{
+	// AIZ 1
+	"01": { "File": "AngelIslandAct1.ogg", "Type": "Music", "LoopStart": "146824", "Name": "Rhythm and Balance (White Jungle)"},
+	"01_fast": { "File": "AngelIslandAct1Fast.ogg", "Type": "Music", "LoopStart": "117459", "Name": "Rhythm and Balance (White Jungle) (Fast)"},
+	"01-alt": { "File": "AIZ1-alt.ogg", "Type": "Music", "LoopStart": "3353771", "Name": "Azure Blue World ...For Emerald Coast"},
+	"01-alt_fast": { "File": "AIZ1-alt_f.ogg", "Type": "Music", "LoopStart": "2683158", "Name": "Azure Blue World ...For Emerald Coast (Fast)"},
+	"01-alt2": { "File": "AIZ1-alt2.ogg", "Type": "Music", "LoopStart": "3891106", "Name": "Windy And Ripply ...For Emerald Coast"},
+	"01-alt2_fast": { "File": "AIZ1-alt2_f.ogg", "Type": "Music", "LoopStart": "3112965", "Name": "Windy And Ripply ...For Emerald Coast (Fast)"},
+	"01-alt3": { "File": "AIZ1-alt3.ogg", "Type": "Music", "LoopStart": "553241", "Name": "Seaside Hill"},
+	"01-alt3_fast": { "File": "AIZ1-alt3_f.ogg", "Type": "Music", "LoopStart": "442226", "Name": "Seaside Hill (Fast)"},
+	"01-old": { "File": "AIZ1_SSBB.ogg", "Type": "Music", "LoopStart": "0", "Name": "Angel Island Zone -SSBB RMX-"},
+	"01-old_fast": { "File": "AIZ1_SSBBF.ogg", "Type": "Music", "LoopStart": "0", "Name": "Angel Island Zone -SSBB RMX- (Fast)"},
+
+
+	// AIZ 2
+	"02": { "File": "AngelIslandAct2.ogg", "Type": "Music", "LoopStart": "304406", "Name": "Eggman's Facility (White Jungle Remix)"},
+	"02_fast": { "File": "AngelIslandAct2Fast.ogg", "Type": "Music", "LoopStart": "243879", "Name": "Eggman's Facility (White Jungle Remix) (Fast)"},
+	"02-same": { "File": "AIZ2-alt2.ogg", "Type": "Music", "LoopStart": "4229977", "Name": "Windy And Ripply ...For Emerald Coast (S.A.M.E. Version)"},
+	"02-same_fast": { "File": "AIZ2-alt2_f.ogg", "Type": "Music", "LoopStart": "3385052", "Name": "Windy And Ripply ...For Emerald Coast (S.A.M.E. Version) (Fast)"},
+	"02-alt": { "File": "AIZ2-alt.ogg", "Type": "Music", "LoopStart": "1857066", "Name": "Won't Stop, Just Go (Green Forest)"},
+	"02-alt_fast": { "File": "AIZ2-alt_f.ogg", "Type": "Music", "LoopStart": "1484839", "Name": "Won't Stop, Just Go (Green Forest) (Fast)"},
+	"02-alt2": { "File": "AIZ2-alt3.ogg", "Type": "Music", "LoopStart": "2241362", "Name": "Theme of Splash Canyon"},
+	"02-alt2_fast": { "File": "AIZ2-alt3_f.ogg", "Type": "Music", "LoopStart": "1792865", "Name": "Theme of Splash Canyon (Fast)"},
+
+
+	// HCZ 1
+	"03": { "File": "HydrocityAct1.ogg", "Type": "Music", "LoopStart": "483321", "Name": "Aquarium Park (Act 1)"},
+	"03_fast": { "File": "HydrocityAct1Fast.ogg", "Type": "Music", "LoopStart": "386454", "Name": "Aquarium Park (Act 1) (Fast)"},
+	"03-rush": { "File": "b2b.ogg", "Type": "Music", "LoopStart": "2470606", "Name": "Back 2 Back (Water Palace)"},
+	"03-rush_fast": { "File": "b2b_f.ogg", "Type": "Music", "LoopStart": "1976101", "Name": "Back 2 Back (Water Palace) (Fast)"},
+	"03-sa1": { "File": "hcz1-alt.ogg", "Type": "Music", "LoopStart": "429695", "Name": "Tricky Maze ...For Lost World"},
+	"03-sa1_fast": { "File": "hcz1-alt_f.ogg", "Type": "Music", "LoopStart": "343708", "Name": "Tricky Maze ...For Lost World (Fast)"},	
+
+
+	// HCZ 2
+	"04": { "File": "HydrocityAct2.ogg", "Type": "Music", "LoopStart": "402132", "Name": "Aquarium Park (Act 2)"},
+	"04_fast": { "File": "HydrocityAct2Fast.ogg", "Type": "Music", "LoopStart": "321812", "Name": "Aquarium Park (Act 2) (Fast)"},
+	"04-alt": { "File": "HCZ2_L.ogg", "Type": "Music", "LoopStart": "0", "Name": "Aquarium Park (Act 3)"},
+        "04-alt_fast": { "File": "HCZ2_LF.ogg", "Type": "Music", "LoopStart": "0", "Name": "Aquarium Park (Act 3) (Fast)"},
+	"04-rush": { "File": "b2bb.ogg", "Type": "Music", "LoopStart": "847167", "Name": "Back 2 Back (Blazy Mix) (Water Palace)"},
+	"04-rush_fast": { "File": "b2bb.ogg", "Type": "Music", "LoopStart": "677569", "Name": "Back 2 Back (Blazy Mix) (Water Palace) (Fast)"},
+	"04-sa1": { "File": "hcz2-alt.ogg", "Type": "Music", "LoopStart": "16341", "Name": "Danger! Chased By A Rock ...For Lost World"},
+	"04-sa1_fast": { "File": "hcz2-alt_f.ogg", "Type": "Music", "LoopStart": "13397", "Name": "Danger! Chased By A Rock ...For Lost World (Fast)"},
+
+	// MGZ 1
+	"05": { "File": "MarbleGardenAct1.ogg", "Type": "Music", "LoopStart": "2116606", "Name": "Windmill Isle - Day"},
+	"05_fast": { "File": "MarbleGardenAct1Fast.ogg", "Type": "Music", "LoopStart": "1693284", "Name": "Windmill Isle - Day (Fast)"},
+	"05-legacy": { "File": "MGZ1_L.ogg", "Type": "Music", "LoopStart": "188271", "Name": "Moonlight Battlefield (Aqua Road)"},
+        "05-legacy_fast": { "File": "MGZ1_LF.ogg", "Type": "Music", "LoopStart": "150616", "Name": "Moonlight Battlefield (Aqua Road) (Fast)"},
+	"05-alt": { "File": "MGZ1-alt.ogg", "Type": "Music", "LoopStart": "3841337", "Name": "Justice (Park Avenue)"},
+	"05-alt_fast": { "File": "MGZ1-alt_f.ogg", "Type": "Music", "LoopStart": "3074809", "Name": "Justice (Park Avenue) (Fast)"},
+	"05-run": { "File": "MGZ1-run.ogg", "Type": "Music", "LoopStart": "3141990", "Name": "Beyond The Speed Of..."},
+	"05-run_fast": { "File": "MGZ1-run_f.ogg", "Type": "Music", "LoopStart": "2513823", "Name": "Beyond The Speed Of... (Fast)"},
+
+	// MGZ 2
+	"06": { "File": "MGZ2.ogg", "Type": "Music", "LoopStart": "0", "Name": "Windmill Isle - Night"},
+	"06_fast":      { "File": "MGZ2_fast.ogg", "Type": "Music", "LoopStart": "0", "Name": "Windmill Isle - Night (Fast)"},
+	"06-legacy":      { "File": "MGZ2_L.ogg", "Type": "Music", "LoopStart": "0", "Name": "Luminous Forest"},
+	"06-legacy_fast":      { "File": "MGZ2_LF.ogg", "Type": "Music", "LoopStart": "0", "Name": "Luminous Forest (Fast)"},
+	"06-alt": { "File": "MGZ2-alt.ogg", "Type": "Music", "LoopStart": "0", "Name": "Set In Motion (Guardian Rock)"},
+	"06-alt_fast": { "File": "MGZ2-alt_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Set In Motion (Guardian Rock) (Fast)"},
+	"06-run": { "File": "MGZ2-run.ogg", "Type": "Music", "LoopStart": "3650947", "Name": "Spring Emotions"},
+	"06-run_fast": { "File": "MGZ2-run_f.ogg", "Type": "Music", "LoopStart": "2920650", "Name": "Spring Emotions (Fast)"},
+
+	// CNZ 1
+	"07":	   { "File": "carnivalnight1.ogg", "Type": "Music", "LoopStart": "1242664", "Name": "Tropical Resort (Act 1)"},
+	"07_fast": { "File": "carnivalnight1fast.ogg", "Type": "Music", "LoopStart": "994131", "Name": "Tropical Resort (Act 1) (Fast)"},
+	"07_proto":	 { "File": "carnivalnight1proto.ogg", "Type": "Music", "LoopStart": "329392", "Name": "Pleasure Castle ...For Twinkle Park"},
+	"07_proto_fast": { "File": "carnivalnight1protofast.ogg", "Type": "Music", "LoopStart": "263514", "Name": "Pleasure Castle ...For Twinkle Park (Fast)"},
+
+
+	// CNZ 2
+	"08":	   { "File": "carnivalnight2.ogg", "Type": "Music", "LoopStart": "498955", "Name": "Tropical Resort (Act 3)"},
+	"08_fast":	   { "File": "carnivalnight2fast.ogg", "Type": "Music", "LoopStart": "399393", "Name": "Tropical Resort (Act 3) (Fast)"},
+	"08-alt": { "File": "cnz2-alt.ogg", "Type": "Music", "LoopStart": "552866", "Name": "Tropical Resort (Act 2)"},
+	"08-alt_fast": { "File": "cnz2-alt_f.ogg", "Type": "Music", "LoopStart": "442553", "Name": "Tropical Resort (Act 2) (Fast)"},
+	"08_proto":{"File": "carnivalnight2proto.ogg", "Type": "Music", "LoopStart": "583578", "Name": "Casino Park"},
+	"08_proto_fast": {"File": "carnivalnight2protofast.ogg", "Type": "Music", "LoopStart": "467026", "Name": "Casino Park (Fast)"},
+	"08-bingo": {"File": "bingohighway.ogg", "Type": "Music", "LoopStart": "854755", "Name": "Bingo Highway"},
+	"08-bingo_fast": {"File": "bingohighway_f.ogg", "Type": "Music", "LoopStart": "683932", "Name": "Bingo Highway (Fast)"},
+	"08-run": {"File": "cnz2-run.ogg", "Type": "Music", "LoopStart": "71865", "Name": "Strange Parade"},
+	"08-run_fast": {"File": "cnz2-run_f.ogg", "Type": "Music", "LoopStart": "57317", "Name": "Strange Parade (Fast)"},
+
+	
+	// FBZ 1
+	"09": { "File": "FlyingBatteryAct1.ogg", "Type": "Music", "LoopStart": "63317", "Name": "Sky Deck a Go! Go!"},
+	"09_fast": { "File": "FlyingBatteryAct1Fast.ogg", "Type": "Music", "LoopStart": "50722", "Name": "Sky Deck a Go! Go! (Fast)"},
+	"09-alt": { "File": "FBZ1-alt.ogg", "Type": "Music", "LoopStart": "1288569", "Name": "Bad Taste Aquarium ...For Hot Shelter"},
+	"09-alt_fast": { "File": "FBZ1-alt_f.ogg", "Type": "Music", "LoopStart": "1030958", "Name": "Bad Taste Aquarium ...For Hot Shelter (Fast)"},
+	"09-legacy": { "File": "FBZ1_L.ogg", "Type": "Music", "LoopStart": "158760", "Name": "Mr. Unsmiley (Sky Rail)"},
+        "09-legacy_fast": { "File": "FBZ1_LF.ogg", "Type": "Music", "LoopStart": "127008", "Name": "Mr. Unsmiley (Sky Rail) (Fast)"},
+
+
+	// FBZ 2
+	"0A": { "File": "FlyingBatteryAct2.ogg", "Type": "Music", "LoopStart": "553050", "Name": "General Offensive ...For Sky Deck"},
+	"0A_fast": { "File": "FlyingBatteryAct2Fast.ogg", "Type": "Music", "LoopStart": "443328", "Name": "General Offensive ...For Sky Deck (Fast)"},
+	"0A-alt": { "File": "FBZ2-alt.ogg", "Type": "Music", "LoopStart": "2930694", "Name": "Red Barrage Area ...For Hot Shelter"},
+	"0A-alt_fast": { "File": "FBZ2-alt_f.ogg", "Type": "Music", "LoopStart": "2344660", "Name": "Red Barrage Area ...For Hot Shelter"},
+	"0A-legacy": { "File": "FBZ2_L.ogg", "Type": "Music", "LoopStart": "70560", "Name": "Egg Fleet"},
+        "0A-legacy_fast": { "File": "FBZ2_LF.ogg", "Type": "Music", "LoopStart": "56448", "Name": "Egg Fleet (Fast)"},
+
+	// ICZ 1
+	"0B": { "File": "IceCapAct1.ogg", "Type": "Music", "LoopStart": "460302", "Name": "Cool Edge (Day)"},
+	"0B_fast": { "File": "IceCapAct1Fast.ogg", "Type": "Music", "LoopStart": "368095", "Name": "Cool Edge (Day) (Fast)"},
+	"0B_proto": { "File": "IceCapAct1Proto.ogg", "Type": "Music", "LoopStart": "400708", "Name": "Be Cool, Be Wild and Be Groovy (S.A.M.E. Version)"},
+	"0B_proto_fast": { "File": "IceCapAct1ProtoFast.ogg", "Type": "Music", "LoopStart": "320767", "Name": "Be Cool, Be Wild and Be Groovy (S.A.M.E. Version) (Fast)"},
+	"0B-SA1": { "File": "ICZ1_L.ogg", "Type": "Music", "LoopStart": "2062276", "Name": "Be Cool, Be Wild and Be Groovy"},
+        "0B-SA1_fast": { "File": "ICZ1_LF.ogg", "Type": "Music", "LoopStart": "1649288", "Name": "Be Cool, Be Wild and Be Groovy (Fast)"},
+	"0B-run": { "File": "ICZ1-run.ogg", "Type": "Music", "LoopStart": "2469873", "Name": "Magical Snowy Day"},
+        "0B-run_fast": { "File": "ICZ1-run_F.ogg", "Type": "Music", "LoopStart": "1976214", "Name": "Magical Snowy Day (Fast)"},
+
+
+	// ICZ 2
+	"0C":	{"File": "IceCapAct2.ogg", "Type": "Music", "LoopStart": "2424822", "Name": "Cool Edge (Day, Sochi 2014 Version)"},
+	"0C_fast": {"File": "IceCapAct2.ogg", "Type": "Music", "LoopStart": "1940338", "Name": "Cool Edge (Day, Sochi 2014 Version)"},
+	"0C_proto":     { "File": "ICZ2.ogg", "Type": "Music", "LoopStart": "129481", "Name": "Blossom Haze (Press Garden Zone Act 2)"},
+	"0C_proto_fast": { "File": "ICZ2_fast.ogg", "Type": "Music", "LoopStart": "103227", "Name": "Blossom Haze (Press Garden Zone Act 2) (Fast)"},
+	"0C-SA1": { "File": "ICZ2_sa1.ogg", "Type": "Music", "LoopStart": "152691", "Name": "Snowy Mountain ...For Ice Cap"},
+	"0C-SA1_fast": { "File": "ICZ2_sa1_f.ogg", "Type": "Music", "LoopStart": "121024", "Name": "Snowy Mountain ...For Ice Cap (Fast)"},
+
+	// LBZ 1
+	"0D": { "File": "LaunchBaseAct1.ogg", "Type": "Music", "LoopStart": "13017", "Name": "That's The Way I Like It (Metal Harbor)"},
+	"0D_fast": { "File": "LaunchBaseAct1Fast.ogg", "Type": "Music", "LoopStart": "10194", "Name": "That's The Way I Like It (Metal Harbor) (Fast)"},
+	"0D_proto": { "File": "LaunchBaseAct1Proto.ogg", "Type": "Music", "LoopStart": "359546", "Name": "Mechanical Resonance ...for Final Egg"},
+	"0D_proto_fast": { "File": "LaunchBaseAct1ProtoFast.ogg", "Type": "Music", "LoopStart": "287411", "Name": "Mechanical Resonance ...for Final Egg (Fast)"},
+	"0D-rush": { "File": "palinka.ogg", "Type": "Music", "LoopStart": "1350462", "Name": "Yeh Yeh Rocket"},
+	"0D-rush_fast": { "File": "palinka_f.ogg", "Type": "Music", "LoopStart": "1080260", "Name": "Yeh Yeh Rocket (Fast)"},
+
+	// LBZ 2
+	"0E":	   { "File": "launchbase2.ogg", "Type": "Music", "LoopStart": "1093253", "Name": "On The Edge (Eternal Engine)"},
+	"0E_fast": { "File": "launchbase2fast.ogg", "Type": "Music", "LoopStart": "874367", "Name": "On The Edge (Eternal Engine) (Fast)"},
+	"0E_proto": { "File": "launchbase2proto.ogg", "Type": "Music", "LoopStart": "1985019", "Name": "Crank The Heat Up!! ...For Final Egg"},
+	"0E_proto_fast": { "File": "launchbase2protofast.ogg", "Type": "Music", "LoopStart": "1587780", "Name": "Crank The Heat Up!! ...For Final Egg (Fast)"},
+	"0E-rush": { "File": "palinka2.ogg", "Type": "Music", "LoopStart": "0", "Name": "Yeh Yeh Rocket (Blazy Mix)"},
+	"0E-rush_fast": { "File": "palinka2_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Yeh Yeh Rocket (Blazy Mix) (Fast)"},
+
+
+	// MHZ 1
+	"0F": { "File": "MushroomHillAct1.ogg", "Type": "Music", "LoopStart": "1473900", "Name": "Windy Hill - Zone 1"},
+	"0F_fast": { "File": "MushroomHillAct1Fast.ogg", "Type": "Music", "LoopStart": "1178913", "Name": "Windy Hill - Zone 1 (Fast)"},
+	"0F-alt": { "File": "mhz1-rsh.ogg", "Type": "Music", "LoopStart": "1473900", "Name": "Right There, Right On"},
+	"0F-alt_fast": {"File": "mhz1-rsh_f.ogg", "Type": "Music", "LoopStart": "1255167", "Name": "Right There, Right On (Fast)"},
+	"0F-ra": {"File": "mhz1-ra.ogg", "Type": "Music", "LoopStart": "14623", "Name": "Plant Kingdom (Act 1)"},
+	"0F-ra_fast": {"File": "mhz1-ra_f.ogg", "Type": "Music", "LoopStart": "12065", "Name": "Plant Kingdom (Act 1) (Fast)"},
+
+	// MHZ 2
+	"10":      { "File": "MHZ2.ogg", "Type": "Music", "LoopStart": "1343372", "Name": "Windy Hill - Zone 2"},
+	"10_fast":      { "File": "MHZ2_fast.ogg", "Type": "Music", "LoopStart": "1075496", "Name": "Windy Hill - Zone 2 (Fast)"},
+	"10-alt": { "File": "mhz2-rsh.ogg", "Type": "Music", "LoopStart": "264334", "Name": "Right There, Right On (Blazy Mix)"},
+	"10-alt_fast": {"File": "mhz2-rsh_f.ogg", "Type": "Music", "LoopStart": "211930", "Name": "Right There, Right On (Blazy Mix) (Fast)"},
+	"10-ra": {"File": "mhz2-ra.ogg", "Type": "Music", "LoopStart": "1466835", "Name": "Plant Kingdom (Act 2)"},
+	"10-ra_fast": {"File": "mhz2-ra_f.ogg", "Type": "Music", "LoopStart": "1173890", "Name": "Plant Kingdom (Act 2) (Fast)"},
+
+
+	// SOZ 1
+	"11": { "File": "SandopolisAct1.ogg", "Type": "Music", "LoopStart": "66151", "Name": "Down In The Base (Hidden Base)"},
+	"11_fast": { "File": "SandopolisAct1Fast.ogg", "Type": "Music", "LoopStart": "52920", "Name": "Down In The Base (Hidden Base) (Fast)"},
+	"11-SA1": { "File": "SOZ1-alt.ogg", "Type": "Music", "LoopStart": "1255564", "Name": "Sand Hill"},
+	"11-SA1_fast": { "File": "SOZ1-alt_f.ogg", "Type": "Music", "LoopStart": "1004445", "Name": "Sand Hill (Fast)"},
+	"11-SU": { "File": "SOZ1-alt2.ogg", "Type": "Music", "LoopStart": "96297", "Name": "Arid Sands (Day)"},
+	"11-SU_fast": { "File": "SOZ1-alt2_f.ogg", "Type": "Music", "LoopStart": "77567", "Name": "Arid Sands (Day) (Fast)"},
+	"11-SR": { "File": "SOZ1-alt3.ogg", "Type": "Music", "LoopStart": "684960", "Name": "Let The Speed Mend It"},
+	"11-SR_fast": { "File": "SOZ1-alt3_f.ogg", "Type": "Music", "LoopStart": "548333", "Name": "Let The Speed Mend It (Fast)"},
+
+
+
+	// SOZ 2
+	"12": { "File": "SandopolisAct2.ogg", "Type": "Music", "LoopStart": "2584868", "Name": "Keys The Ruin (Pyramid Cave) (S.A.M.E. Version)"},
+	"12_fast": { "File": "SandopolisAct2Fast.ogg", "Type": "Music", "LoopStart": "2067191", "Name": "Keys The Ruin (Pyramid Cave) (S.A.M.E. Version) (Fast)"},
+	"12-SA2": { "File": "SOZ2_L.ogg", "Type": "Music", "LoopStart": "989113", "Name": "Keys The Ruin (Pyramid Cave)"},
+        "12-SA2_fast": { "File": "SOZ2_LF.ogg", "Type": "Music", "LoopStart": "791290", "Name": "Keys The Ruin (Pyramid Cave) (Fast)"},
+	"12-SU": { "File": "SOZ2-alt.ogg", "Type": "Music", "LoopStart": "77707", "Name": "Arid Sands (Night)"},
+	"12-SU_fast": { "File": "SOZ2-alt_f.ogg", "Type": "Music", "LoopStart": "62148", "Name": "Arid Sands (Night) (Fast)"},
+
+	// LRZ 1
+	"13": { "File": "LavaReefAct1.ogg", "Type": "Music", "LoopStart": "2125323", "Name": "Red Hot Skull ...For Red Mountain"},
+        "13_fast": { "File": "LavaReefAct1Fast.ogg", "Type": "Music", "LoopStart": "1700899", "Name": "Red Hot Skull ...For Red Mountain (Fast)"},
+	"13-legacy": { "File": "LRZ1_L.ogg", "Type": "Music", "LoopStart": "497329", "Name": "Flame Core - Volcano -"},
+        "13-legacy_fast": { "File": "LavaReefAct1Fast.ogg", "Type": "Music", "LoopStart": "397863", "Name": "Flame Core - Volcano - (Fast)"},
+	"13-alt": { "File": "LRZ1-alt.ogg", "Type": "Music", "LoopStart": "394157", "Name": "The Cauldron"},
+	"13-alt_fast": { "File": "LRZ1-alt_f.ogg", "Type": "Music", "LoopStart": "315037", "Name": "The Cauldron (Fast)"},
+
+
+	// LRZ 2
+	"14": { "File": "LavaReefAct2.ogg", "Type": "Music", "LoopStart": "611216", "Name": "Leading Lights ...For Lost World"},
+	"14_fast": { "File": "LavaReefAct2Fast.ogg", "Type": "Music", "LoopStart": "488778", "Name": "Leading Lights ...For Lost World (Fast)"},
+	"14-alt": { "File": "LRZ2-alt.ogg", "Type": "Music", "LoopStart": "331018", "Name": "Flame Core - The Cavern -"},
+	"14-alt_fast": { "File": "LRZ2-alt_f.ogg", "Type": "Music", "LoopStart": "264694", "Name": "Flame Core - The Cavern -"},
+	"14-alt2": { "File": "LRZ2-alt2.ogg", "Type": "Music", "LoopStart": "3897008", "Name": "Crystal Cavern"},
+	"14-alt2_fast": { "File": "LRZ2-alt2_f.ogg", "Type": "Music", "LoopStart": "3117607", "Name": "Crystal Cavern (Fast)"},
+	
+	// HPZ
+	"mysticumbreon": { "File": "hpz.ogg", "Type": "Music", "LoopStart": "61342", "Name": "Mystic Ruins"},
+	"mysticumbreon_fast": { "File": "hpz_f.ogg", "Type": "Music", "LoopStart": "49215", "Name": "Mystic Ruins (Fast)"},
+	"coldsteel-vs-knox": { "File": "hpz_boss.ogg", "Type": "Music", "LoopStart": "56228", "Name": "Boss: Suitable Opponent"},
+
+	// SSZ
+	"15": { "File": "SkySanctuary.ogg", "Type": "Music", "LoopStart": "0", "Name": "Cyberspace 1-2: Flowing"},
+	"15_fast": { "File": "SkySanctuaryFast.ogg", "Type": "Music", "LoopStart": "0", "Name": "Cyberspace 1-2: Flowing (Fast)"},
+	"15-alt": { "File": "SkySanctuary_c.ogg", "Type": "Music", "LoopStart": "276052", "Name": "Sky Sanctuary (Classic Remix)"},
+	"15-alt_fast": { "File": "SkySanctuaryFast_c.ogg", "Type": "Music", "LoopStart": "220841", "Name": "Sky Sanctuary (Classic Remix) (Fast)"},
+	"15-alt2": { "File": "SSZ-alt.ogg", "Type": "Music", "LoopStart": "0", "Name": "Course: Sanctuary Falls"},
+	"15-alt2_fast": { "File": "SSZ-alt_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Course: Sanctuary Falls (Fast)"},
+
+
+	// DEZ 1
+	"16": { "File": "DeathEggAct1.ogg", "Type": "Music", "LoopStart": "2180083", "Name": "Unstable World (Crazy Gadget)"},
+	"16_fast": { "File": "DeathEggAct1Fast.ogg", "Type": "Music", "LoopStart": "1744066.4", "Name": "Unstable World (Crazy Gadget) (Fast)"},
+	"16-pingas": { "File": "Eggmanland1.ogg", "Type": "Music", "LoopStart": "84182", "Name": "Eggmanland (Night)"},
+	"16-pingas_fast": { "File": "Eggmanland1_f.ogg", "Type": "Music", "LoopStart": "67267", "Name": "Eggmanland (Night) (Fast)"},
+	"16-cc": { "File": "DEZ1-alt.ogg", "Type": "Music", "LoopStart": "47849", "Name": "Scramble For The Core (Cannon's Core)"},
+	"16-cc_fast": { "File": "DEZ1-alt_f.ogg", "Type": "Music", "LoopStart": "38223", "Name": "Scramble For The Core (Cannon's Core) (Fast)"},
+
+	// DEZ 2
+	"17":      { "File": "DEZ2.ogg", "Type": "Music", "LoopStart": "1796667", "Name": "Highway In The Sky (Final Rush)"},
+	"17_fast":      { "File": "DEZ2_fast.ogg", "Type": "Music", "LoopStart": "1436923", "Name": "Highway In The Sky (Final Rush) (Fast)"},
+	"17-alt":      { "File": "DEZ2-alt.ogg", "Type": "Music", "LoopStart": "0", "Name": "The Supernatural (Final Chase)"},
+	"17-alt_fast":      { "File": "DEZ2-alt_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "The Supernatural (Final Chase) (Fast)"},
+	"17-pingas":      { "File": "Eggmanland2.ogg", "Type": "Music", "LoopStart": "0", "Name": "Eggmanland (Day)"},
+	"17-pingas_fast":      { "File": "Eggmanland2_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Eggmanland (Day) (Fast)"},
+	"17-cc": { "File": "DEZ2-alt2.ogg", "Type": "Music", "LoopStart": "3179455", "Name": "Deep Inside Of... (Cannon's Core)"},
+	"17-cc_fast": { "File": "DEZ2-alt2_f.ogg", "Type": "Music", "LoopStart": "2543905", "Name": "Deep Inside Of... (Cannon's Core) (Fast)"},
+
+
+        // Act 1 Boss
+	"18": { "File": "SKMiniBoss.ogg", "Type": "Music", "LoopStart": "78152", "Name": "Boss: Robot Carnival / Robot Storm"},
+	"2e_sonic3": {"File": "Miniboss1.ogg", "Type": "Music", "LoopStart": "660781", "Name": "vs. Rotatatron & Refreshinator"},
+	"gun": {"File": "gunmobile.ogg", "Type": "Music", "LoopStart": "336455", "Name": "Boss: G.U.N. Mobile"},
+	"lollipop": {"File": "Miniboss2.ogg", "Type": "Music", "LoopStart": "0", "Name": "vs. Captain Jelly & Admiral Jelly"},
+	"colori": {"File": "Miniboss3.ogg", "Type": "Music", "LoopStart": "528933", "Name": "vs. Orcan & Skullian"},
+	"masteremerald": { "File": "S3MiniBoss.ogg", "Type": "Music", "LoopStart": "383544", "Name": "Fight For My Own Way ...Boss: Event"},
+	"t-series": {"File": "easports.ogg", "Type": "Music", "LoopStart": "0", "Name": "Heartless Colleague ...Boss: E-Series Targets"},
+
+
+	// Eggman in HPZ
+	"egg-sa1": { "File": "eggsa1.ogg", "Type": "Music", "LoopStart": "1429373", "Name": "Theme of Dr. Eggman (SA1)"},
+	"egg-sa2": { "File": "eggsa2.ogg", "Type": "Music", "LoopStart": "1412722", "Name": "E.G.G.M.A.N. (Instrumental)"},
+	"egg-06": { "File": "egg06.ogg", "Type": "Music", "LoopStart": "0", "Name": "Theme of Dr. Eggman (06)"},
+
+
+        // Act 2 Boss
+	"19": { "File": "Act2Boss.ogg", "Type": "Music", "LoopStart": "283754", "Name": "Egg Mobile ...Boss: Egg Hornet"},
+	"su-day": { "File": "boss-day.ogg", "Type": "Music", "LoopStart": "6333738", "Name": "Boss Battle (Day)"},
+	"su-nite": { "File": "boss-night.ogg", "Type": "Music", "LoopStart": "5080409", "Name": "Boss Battle (Night)"},
+	"sandman": { "File": "boss-soz2.ogg", "Type": "Music", "LoopStart": "118938", "Name": "Boss: Masters of the Desert"},
+	"adv3": { "File": "boss-adv3.ogg", "Type": "Music", "LoopStart": "2525641", "Name": "Boss (Advance 3)"},
+	"emperor": { "File": "boss-lrz2.ogg", "Type": "Music", "LoopStart": "559187", "Name": "Egg Emperor"},
+	"emperor-gens": { "File": "boss-gens.ogg", "Type": "Music", "LoopStart": "559830", "Name": "BOSS: EGG EMPEROR"},
+	"cd-boss": { "File": "boss-cd.ogg", "Type": "Music", "LoopStart": "0", "Name": "Boss!! (CD)"},
+	"maniac": { "File": "boss-mania.ogg", "Type": "Music", "LoopStart": "218127", "Name": "Havoc Prognosis (Eggman Boss 2)"},
+	"run-boss": { "File": "boss-run.ogg", "Type": "Music", "LoopStart": "2571030", "Name": "Theory of Attack"},
+
+        // Sky Sanctuary Bosses
+	"sonic1_boss": { "File": "S1Boss.ogg", "Type": "Music", "LoopStart": "298126", "Name": "ZERO The Chase Master ...Boss: Eggman Robot -ZERO-"},
+        "chaos": { "File": "kalifornia.ogg", "Type": "Music", "LoopStart": "133639", "Name": "Boss: Chaos 0, 2, 4"},
+	"sa2-s1": { "File": "S1Boss-SA2.ogg", "Type": "Music", "LoopStart": "0", "Name": "Boss: Shut Up, Faker!"},
+	"rush-s1": { "File": "S1Boss-rsh.ogg", "Type": "Music", "LoopStart": "1607524", "Name": "Metal Scratchin'"},
+	"sonic2_boss": { "File": "S2Boss.ogg", "Type": "Music", "LoopStart": "517475", "Name": "Crazy Robo ...Boss: E-101 Kai"},
+	"sa2-s2": { "File": "S2Boss-SA2.ogg", "Type": "Music", "LoopStart": "553995", "Name": "For True Story ...For Sonic vs. Shadow"},
+	"rush-s2": { "File": "S2Boss-RSH.ogg", "Type": "Music", "LoopStart": "1576027", "Name": "Boss (Rush Adventure)"},
+
+	// DDZ
+	"1A": { "File": "PerfChaos.ogg", "Type": "Music", "LoopStart": "562341", "Name": "Open Your Heart"},
+	"1A_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"}, 
+	"1A-SA2": { "File": "Doomsday.ogg", "Type": "Music", "LoopStart": "523022", "Name": "Live & Learn"},
+	"1A-SA2_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"1A-SU": { "File": "DarkGaia.ogg", "Type": "Music", "LoopStart": "1658314", "Name": "Super Sonic vs. Perfect Dark Gaia"},
+	"1A-SU_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"sono": { "File": "Doomsday1.ogg", "Type": "Music", "LoopStart": "507725", "Name": "Sono Chino Sadame"},
+	"sono_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"coda": { "File": "Doomsday2.ogg", "Type": "Music", "LoopStart": "3740574", "Name": "Bloody Stream"},
+	"coda_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"baby-stando": { "File": "Doomsday3.ogg", "Type": "Music", "LoopStart": "306238", "Name": "Stand Proud"},
+	"baby-stando_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"units": { "File": "Doomsday4.ogg", "Type": "Music", "LoopStart": "39397", "Name": "Great Days (UNITS Ver.)"},
+	"units_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"vento": { "File": "Doomsday5.ogg", "Type": "Music", "LoopStart": "523022", "Name": "Fighting Gold"},
+	"vento_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"wake-up": { "File": "Doomsday6.ogg", "Type": "Music", "LoopStart": "485644", "Name": "STONE OCEAN"},
+	"wake-up_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+	"techscammer": { "File": "supermech2.ogg", "Type": "Music", "LoopStart": "1629284", "Name": "Last Boss ver. 1: Metal Madness"},
+	"wake-up_fast": { "File": "DoomsdayFast.ogg", "Type": "Music", "LoopStart": "790268", "Name": "You're In A Pinch!"},
+
+
+	// Glowing Spheres bonus stage
+	"1B": { "File": "GlowingSpheres.ogg", "Type": "Music", "LoopStart": "80848", "Name": "Special Stage: Bonus Challenge"},
+
+	// Blue Spheres special stage
+	//  -> This requires a music file including music speedup every 30 seconds
+	"1C": { "File": "BlueSpheres.ogg", "Type": "Music", "LoopStart": "249741", "Name": "Special Stage: Emerald Challenge"},
+	"1C_speedup": { "File": "BlueSpheres.ogg", "Type": "Music", "LoopStart": "249741", "Name": "Special Stage: Emerald Challenge"},
+	"1C_speedup45": { "File": "BlueSpheres.ogg", "Type": "Music", "LoopStart": "249741", "Name": "Special Stage: Emerald Challenge"},
+
+	// Slot Machine bonus stage
+	"1D": { "File": "SlotMachine.ogg", "Type": "Music", "LoopStart": "661318", "Name": "Trap Tower (Pinball Stage)"},
+
+	// Gumball Machine bonus stage
+	"1E": { "File": "GumballMachine.ogg", "Type": "Music", "LoopStart": "24024", "Name": "And... Fish Hits!"},
+
+	// Knuckles' Theme
+	//  -> S&K Version
+	"1F": { "File": "Knuckles.ogg", "Type": "Music", "LoopStart": "2341389", "Name": "Unknown From M.E. ver.2"},
+
+	"1F_sonic3": { "File": "KnucklesS3.ogg", "Type": "Music", "LoopStart": "246406", "Name": "Unknown From M.E. ver.1"},
+
+	"1F_proto":{ "File": "KnucklesProto.ogg", "Type": "Music", "LoopStart": "1602", "Name": "Knuckles from K​.​N​.​U​.​C​.​K​.​L​.​E​.​S. & Knuckles (Full Version & Knuckles)"},
+
+	// Competition Menu
+	"2D": {"File": "Competition.ogg", "Type": "Music", "LoopStart": "49311", "Name": "System Screen: 2P VS Menu"},
+	"2D_proto": {"File": "CompetitionProto.ogg", "Type": "Music", "LoopStart": "81946", "Name": "Main Menu - Sonic & All-Stars Racing Transformed"},
+	"2D-riders": {"File": "Competition-R.ogg", "Type": "Music", "LoopStart": "0", "Name": "Start Up Your EX Gear!"},
+	"2D-SA2": {"File": "Competition-SA2.ogg", "Type": "Music", "LoopStart": "925962", "Name": "2-Player Select (SA2)"},
+	"2D-TSR": {"File": "Competition-TSR.ogg", "Type": "Music", "LoopStart": "855054", "Name": "System - Main Menu (TSR)"},
+
+
+
+        // Azure Lake
+	"20": { "File": "AzureLake.ogg", "Type": "Music", "LoopStart": "20444", "Name": "Windy Hill ...For Windy Valley"},
+	"20_fast": { "File": "AzureLake_f.ogg", "Type": "Music", "LoopStart": "16605", "Name": "Windy Hill ...For Windy Valley (Fast)"},
+	"20-alt": { "File": "AzureLake2.ogg", "Type": "Music", "LoopStart": "151834", "Name": "The Air ...For Windy Valley"},
+	"20-alt2": { "File": "AzureLake3.ogg", "Type": "Music", "LoopStart": "1230689", "Name": "Sea Gate"},
+
+        // Balloon Park
+	"21": { "File": "BalloonPark.ogg", "Type": "Music", "LoopStart": "2407208", "Name": "Challenge / Mission 4"},
+	"21-riders": { "File": "SegaTIM.ogg", "Type": "Music", "LoopStart": "3175452", "Name": "SEGA Carnival"},
+
+        // Desert Palace
+	"22": { "File": "DesertPalace.ogg", "Type": "Music", "LoopStart": "845974", "Name": "Kick The Rock! (Wild Canyon)"},
+	"23-riders": { "File": "DesertPalace2.ogg", "Type": "Music", "LoopStart": "4314399", "Name": "Theme Of Sand Ruins"},
+
+        // Chrome Gadget
+	"23": { "File": "ChromeGadget.ogg", "Type": "Music", "LoopStart": "2722558", "Name": "This Way Out (Prison Lane)"},
+	"22-alt": { "File": "chromegadget2.ogg", "Type": "Music", "LoopStart": "966", "Name": "Final Fortress"},
+	"22-riders": { "File": "chromegadget3.ogg", "Type": "Music", "LoopStart": "622285", "Name": "Theme of Egg Factory"},
+
+
+        // Endless Mine
+	"24-riders": { "File": "EndlessMine.ogg", "Type": "Music", "LoopStart": "2316078", "Name": "Theme of Green Cave"},
+	"24": {"File": "EndlessMine2.ogg", "Type": "Music", "LoopStart": "1129110", "Name": "Honeycomb Highway"},
+
+	// Title Screen
+
+	"25": { "File": "TitleSK.ogg", "Type": "Jingle", "Name": "SA2 (Main Riff)"},
+	"25_sonic3": { "File": "TitleS3.ogg", "Type": "Jingle", "Name": "SA1: Title Screen"},
+	"25-heroes": { "File": "TitleSH.ogg", "Type": "Jingle", "Name": "Title Screen (Heroes)"},
+	"25-su": { "File": "TitleSU.ogg", "Type": "Jingle", "Name": "The World Adventure"},
+	"25-sc": { "File": "TitleSC.ogg", "Type": "Jingle", "Name": "Theme of Sonic Colors - Title ver."},
+	"25-gens": { "File": "TitleSG.ogg", "Type": "Jingle", "Name": "Title (Generations)"},
+	"25-lw": { "File": "TitleLW.ogg", "Type": "Jingle", "Name": "Wonder World - Title ver."},
+	"25-asb": { "File": "TitleASB.ogg", "Type": "Jingle", "Name": "Title Screen (JJBA: All-Star Battle)"},
+	"25-eoh": { "File": "TitleEOH.ogg", "Type": "Jingle", "Name": "Title Screen (JJBA: Eyes of Heaven)"},
+	"25-cd": { "File": "TitleCD.ogg", "Type": "Jingle", "Name": "Title (CD)"},
+
+
+
+	// Credits Music (from Sonic 3)
+	"26-part1":  { "File": "EndingPt1.ogg", "Type": "Music", "Name": "Fukutsu ~Mushin no Sakebi~"},
+	"26-part2": { "File": "EndingBT.ogg", "Type": "Music", "Name": "Overdrive"},
+	"26": { "File": "EndingS3.ogg", "Type": "Music", "Name": "Stardust Crusaders"},
+	"26-part4": { "File": "EndingDIU.ogg", "Type": "Music", "Name": "Diamond Is Unbreakable ~ Stand Activated"},
+	"26_proto": {"File": "EndingSK.ogg", "Type": "Music", "Name": "il vento d'oro"},
+	"26-part6": { "File": "EndingSO.ogg", "Type": "Music", "Name": "Theme of Stone Ocean"},
+	"sonic-sa1": { "File": "EndingSSA1.ogg", "Type": "Music", "Name": "It Doesn't Matter ver.1"},
+	"sonic-sa2": { "File": "EndingSSA2.ogg", "Type": "Music", "Name": "It Doesn't Matter ver.2"},
+	"tails-sa1": { "File": "EndingTSA1.ogg", "Type": "Music", "Name": "Believe in Myself ver.1"},
+	"tails-sa2": { "File": "EndingTSA2.ogg", "Type": "Music", "Name": "Believe in Myself ver.2"},
+	"knuck-sa1": { "File": "EndingKSA1.ogg", "Type": "Music", "Name": "Unknown from M.E. ver.1"},
+	"knuck-sa2": { "File": "EndingKSA2.ogg", "Type": "Music", "Name": "Unknown from M.E. ver.2"},
+
+	// Game Over
+	"27": { "File": "GameOver.ogg", "Type": "Jingle", "Name": "Jingle: Game Over"},
+	"27-CD": { "File": "GameOver-CD.ogg", "Type": "Jingle", "Name": "Game Over (CD)"},
+	"27-rally": { "File": "GameOver-yeah.ogg", "Type": "Jingle", "Name": "Game Over Yeah!"},
+	"27-rush": { "File": "GameOver-rush.ogg", "Type": "Jingle", "Name": "Groove Rush #2"},
+
+	// Level results jingle
+	"29": { "File": "ActClear.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Sonic CD - Zone Clear (JP)"},
+	"29-act2": { "File": "ActClear2.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "JINGLE - Stage Clear (From Sonic Before / After The Sequel)"},
+	"29-act2f": { "File": "ActClear2_LBZ.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "JINGLE - Stage Clear (From Sonic Before / After The Sequel)"},
+	"rivals-win": { "File": "ActClear_R.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Jingle: WIN (Rivals 2)"},
+	"32": { "File": "EndJingleSK.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Traitor's Requiem (Custom Jingle Edit)"},
+	"32_sonic3": { "File": "EndJingleS3.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stand Proud (Custom Jingle Edit)"},
+	"32-special": { "File": "Emerarudo.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Jingle: Town Mission Clear"},
+	"32-jonathan": { "File": "ActClear_JJBA.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Sono Chino Sadame (Custom Jingle Edit)"},
+	"32-joseph": { "File": "ActClear_BT.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Bloody Stream (Custom Jingle Edit)"},
+	"32-josuke": { "File": "ActClear_DIU.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Crazy Noisy Bizarre Town (Custom Jingle Edit)"},
+	"32-jolyne": { "File": "ActClear_SO.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "STONE OCEAN (Custom Jingle Edit)"},
+	"29-sa1": { "File": "ActClear-SA1.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Jingle: Round Clear (SA1)"},
+	"29-sa2": { "File": "ActClear-SA2.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (SA2)"},
+	"29-rivals1": { "File": "ActClear-R1.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "JINGLE: WIN (Rivals 1)"},
+	"29-mania": { "File": "ActClear-Mania.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (Mania)"},
+	"29-munused": { "File": "ActClear-MB.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (Mania, Unused)"},
+	"29-colors": { "File": "ActClear-SC.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (Colors)"},
+	"29-shuffle": { "File": "ActClear-SS.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Jingle: Finish"},
+	"29-sr": { "File": "ActClear-SR.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (The Secret Rings)"},
+	"29-lw": { "File": "ActClear-LW.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (Wonder World ver.)"},
+	"29-ra": { "File": "ActClear-RA.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Jingle - Boss Clear"},
+	"29-bk": { "File": "ActClear-BK.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (The Black Knight)"},
+	"29-su": { "File": "ActClear-SU.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Stage Clear (Unleashed)"},
+	"29-suboss": { "File": "BossClear-SU.ogg", "Type": "Jingle", "ClearMusic": "1", "Name": "Boss Stage Clear (Unleashed)"},
+
+	// Extra life jingle
+	//  -> First ID is S&K version, second is S3 version
+	"2A": { "File": "1up.ogg", "Type": "Jingle" },
+	"2A_sonic3": { "File": "1up_s3.ogg", "Type": "Jingle"},
+	"dreamcast": { "File": "1up_dc.ogg", "Type": "Sound"},
+	"modern": { "File": "1up_modern.ogg", "Type": "Sound"},
+
+	// Emerald jingle
+	"2B": { "File": "Emerald.ogg", "Type": "Sound"},
+
+	// Data Select menu
+	"2F": { "File": "SaveSelect.ogg", "Type": "Music", "LoopStart": "839072", "Name": "Funky Groove Makes U Hot!? ...for Options"},
+	"2F-SA2": { "File": "MenuSA2.ogg", "Type": "Music", "LoopStart": "21742", "Name": "Advertise: SA2 (Ver. B)"},
+	"menu-heroes": { "File": "MenuSH.ogg", "Type": "Music", "LoopStart": "36661", "Name": "System Screen: Menu"},
+	"1adventuremode": { "File" : "Menus/SA1_Adventure.ogg", "Type" : "Music", "LoopStart" : "262639", "Name": "Choose Your Buddy! -Finger Bass ver.-"},
+	"1trialmode": { "File" : "Menus/SA1_Trial.ogg", "Type" : "Music", "LoopStart" : "208887", "Name": "Challenge for Another Aim"},
+	"2storymode": { "File" : "Menus/SA2_Story.ogg", "Type" : "Music", "LoopStart" : "32175", "Name": "SA2 In The Groove"},
+	"2stageselect": { "File" : "Menus/SA2_Stage.ogg", "Type" : "Music", "LoopStart" : "203567", "Name": "Advertise: SA2 (Ver. C)"},
+	"shselect": { "File" : "Menus/SH_Story.ogg", "Type" : "Music", "LoopStart" : "0", "Name": "System Screen: Select"},
+	"run-select": { "File" : "Menus/Run.ogg", "Type" : "Music", "LoopStart" : "18653", "Name": "Where To Today?"},
+
+	// Final Boss
+	"30": { "File": "bigboss.ogg", "Type": "Music", "LoopStart": "141197", "Name": "Big Arms (Cash Cash RMX)"},
+	"30-barms": { "File": "bigarms.ogg", "Type": "Music", "LoopStart": "764094", "Name": "Militant Missionary ...Boss: Egg Walker & Egg Viper"},
+	"30-mecha": { "File": "mecha.ogg", "Type": "Music", "LoopStart": "545901", "Name": "Boss: Chaos ver.6"},
+	"30-same": { "File": "mecha_same.ogg", "Type": "Music", "LoopStart": "5359404", "Name": "Boss: Chaos ver.6 (S.A.M.E. Version)"},
+	"30-egg": { "File": "forzalotta.ogg", "Type": "Music", "LoopStart": "923904", "Name": "lotta feroce"},
+	"30-su": { "File": "gaia1.ogg", "Type": "Music", "LoopStart": "2439", "Name": "vs. Dark Gaia"},
+	"30-sc": { "File": "n-word.ogg", "Type": "Music", "LoopStart": "58426", "Name": "vs. Nega Wisp Armor (Phase 1)"},
+	"30-draco": { "File": "dragoon.ogg", "Type": "Music", "LoopStart": "0", "Name": "vs. Egg Dragoon"},
+
+	// Drowning jingle
+	"31": { "File": "Drowning.ogg", "Type": "Jingle"},
+	
+	// Super Theme
+	"supertheme_sonic2": { "File": "unused.ogg", "Type": "Music", "LoopStart": "564569", "Name": "Open Your Heart (Instrumental)"},
+	"super-sa2": {"File": "livelearn.ogg", "Type": "Music", "LoopStart": "453041", "Name": "Live & Learn (Instrumental ver.)"},
+	"2e_proto": {"File": "unused_proto.ogg", "Type": "Music", "LoopStart": "3364962", "Name": "What I'm Made Of"},
+	"super-06": {"File": "06.ogg", "Type": "Music", "LoopStart": "1284798", "Name": "Solaris Phase 2"},
+	"super-cu": {"File": "dcsupra.ogg", "Type": "Music", "LoopStart": "312661", "Name": "Super Sonic (Re-Colors)"},
+	"super-s4": {"File": "miageci.ogg", "Type": "Music", "LoopStart": "75973", "Name": "Super Sonic (Sonic 4)"},
+	"super-wii": {"File": "slightlybetter.ogg", "Type": "Music", "LoopStart": "985720", "Name": "Super Sonic (WiiWare)"},
+	"super-lw": {"File": "lostwarudo.ogg", "Type": "Music", "LoopStart": "490245", "Name": "Super Sonic (Wonder World ver.)"},
+	"super-pb": {"File": "sonosuper.ogg", "Type": "Music", "LoopStart": "217438", "Name": "Sono Chi No Sadame (Instrumental)"},
+	"super-bt": {"File": "caesar.ogg", "Type": "Music", "LoopStart": "3607886", "Name": "Bloody Stream (Instrumental)"},
+	"super-sc": {"File": "yareyare.ogg", "Type": "Music", "LoopStart": "305019", "Name": "Stand Proud (Instrumental)"},
+	"super-diu": {"File": "dora.ogg", "Type": "Music", "LoopStart": "2838570", "Name": "chase (instrumental)"},
+	"super-va": {"File": "7page.ogg", "Type": "Music", "LoopStart": "1609791", "Name": "Fighting Gold (Instrumental)"},
+	"super-so": {"File": "befree.ogg", "Type": "Music", "LoopStart": "486010", "Name": "STONE OCEAN (INSTRUMENTAL)"},
+
+	//SFX
+	"36": { "File": "Skidding.ogg", "Type": "Sound" },
+	"63": { "File": "star_post.ogg", "Type": "Sound" },
+	"77": { "File": "Balloon.ogg", "Type": "Sound" },
+	"5B": { "File": "Bleep.ogg", "Type": "Sound" },
+	"3D": { "File": "Destroy.ogg", "Type": "Sound" },
+	"6E": { "File": "BossHit.ogg", "Type": "Sound" },
+	"3E": { "File": "FireShield.ogg", "Type": "Sound" },
+	"3F": { "File": "BubbleShield.ogg", "Type": "Sound" },
+	"40": { "File": "LightningShield.ogg", "Type": "Sound" },
+	"43": { "File": "FireDash.ogg", "Type": "Sound" },
+	"44": { "File": "BubbleBounce.ogg", "Type": "Sound" },
+	"45": { "File": "LightningJump.ogg", "Type": "Sound" },
+	"42": { "File": "InstaShield.ogg", "Type": "Sound" },
+	"33": { "File": "Ring1.ogg", "Type": "Sound" },
+	"34": { "File": "Ring2.ogg", "Type": "Sound" },
+	"B9": { "File": "RingLoss.ogg", "Type": "Sound" },
+	"3C": { "File": "Roll.ogg", "Type": "Sound" },
+	"B1": { "File": "Spring.ogg", "Type": "Sound" },
+	"AB": { "File": "SpindashCharge.ogg", "Type": "Sound" },
+	"B6": { "File": "SpindashRelease.ogg", "Type": "Sound" },
+	"B4": { "File": "BossDefeat.ogg", "Type": "Sound" },
+	"B0": { "File": "ScoreTotal.ogg", "Type": "Sound" },
+	"BA": { "File": "Flying.ogg", "Type": "Sound" },
+	"BB": { "File": "Tired.ogg", "Type": "Sound" },
+	"62": { "File": "Jump.ogg", "Type": "Sound" },
+	"AC": { "File": "Continue.ogg", "Type": "Jingle" },
+	"dropdash_charge": { "File": "DropDashCharge.ogg", "Type": "Sound", "Channel": "85" },
+	"peelout_charge": { "File": "PeelCharge.ogg", "Type": "Sound", "Channel": "84" },
+	"peelout_release": { "File": "PeelRelease.ogg", "Type": "Sound", "Channel": "84" },
+	"dropdash_release": { "File": "SpinDashRelease.ogg", "Type": "Sound", "Channel": "85" },
+	"39": { "File": "W_Splash1.ogg", "Type": "Sound" },
+	"57": { "File": "W_Splash2.ogg", "Type": "Sound" },
+	"9F": { "File": "Transform.ogg", "Type": "Sound" },	
+
+
+	// Invincibility
+	"2C-heroes": { "File": "SKInvincibility.ogg", "Type": "Music", "LoopStart": "19019", "Name": "Invincible (Heroes)"},
+	"2C-heroes_fast": { "File": "SKInvincibility_fast.ogg", "Type": "Music", "LoopStart": "15414", "Name": "Invincible (Heroes) (Fast)"},
+	"2C-sa2": { "File": "SA2Invincibility.ogg", "Type": "Music", "LoopStart": "27284", "Name": "Still Invincible... No Fear!"},
+	"2C-sa2_fast": { "File": "SA2Invincibility_fast.ogg", "Type": "Music", "LoopStart": "22137", "Name": "Still Invincible... No Fear! (Fast)"},
+	"2C_sonic3": { "File": "S3Invincibility.ogg", "Type": "Music", "LoopStart": "181826", "Name": "Invincible... No Fear!"},
+	"2C_sonic3_fast": { "File": "S3Invincibility_fast.ogg", "Type": "Music", "LoopStart": "144559", "Name": "Still Invincible... No Fear! (Fast)"},
+	"2C-E": { "File": "EEE.ogg", "Type": "Music", "LoopStart": "935680", "Name": "Jingle E / Jingle 5"},
+	"2C-E_fast": { "File": "EEE-f.ogg", "Type": "Music", "LoopStart": "748390", "Name": "Jingle E / Jingle 5 (Fast)"},
+	"2C": { "File": "S3Invincibility.ogg", "Type": "Music", "LoopStart": "181826", "Name": "Invincible... No Fear!"},
+	"2C_fast": { "File": "S3Invincibility_fast.ogg", "Type": "Music", "LoopStart": "144559", "Name": "Invincible... No Fear! (Fast)"},	"2C-colors": { "File": "SCInv.ogg", "Type": "Music", "LoopStart": "0", "Name": "Super Sonic (Colors)"},
+	"2C-colors_fast": { "File": "SCInv_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Super Sonic (Colors) (Fast)"},
+	"2C-lw": { "File": "LWInv.ogg", "Type": "Music", "LoopStart": "226744", "Name": "Invincible (Heroes ver.)"},
+	"2C-lw_fast": { "File": "LWInv_f.ogg", "Type": "Music", "LoopStart": "181395", "Name": "Invincible (Heroes ver.) (Fast)"},
+	"2C-adv": { "File": "AdvInv_f.ogg", "Type": "Music", "LoopStart": "64510", "Name": "Invinciblility (Advance 2 / 3)"},
+	"2C-adv_fast": { "File": "AdvInv_f.ogg", "Type": "Music", "LoopStart": "52415", "Name": "Invincible (Advance 2 / 3) (Fast)"},
+	"2C-riders": { "File": "RidersInv.ogg", "Type": "Music", "LoopStart": "0", "Name": "Invincibility (Riders)"},
+	"2C-riders_fast": { "File": "RidersInv_f.ogg", "Type": "Music", "LoopStart": "0", "Name": "Invincibility (Riders) (Fast)"},
+	"2C-run": { "File": "RunInv.ogg", "Type": "Music", "LoopStart": "39230", "Name": "Going My Way"},
+	"2C-run_fast": { "File": "RunInv_f.ogg", "Type": "Music", "LoopStart": "32377", "Name": "Going My Way (Fast)"},
+
+	// Continue
+	"28": {"File": "ContinueSK.ogg", "Type": "Music", "LoopStart": "268268", "Name": "Funky Groove Makes U Hot!? ...for Options"},
+	"28_sonic3": {"File": "ContinueS3.ogg", "Type": "Music", "LoopStart": "35590", "Name": "Advertise: Rhythmic Passage"},
+	"28-dc": {"File": "ContinueSA1.ogg", "Type": "Music", "LoopStart": "0", "Name": "Will You Continue?"},
+	"28-colors": {"File": "ContinueSC.ogg", "Type": "Music", "LoopStart": "575685", "Name": "Game Over (Colors)"},
+
+
+	// SEGA sound
+	"FF": { "File": "sega.ogg", "Type": "Jingle"}
+}

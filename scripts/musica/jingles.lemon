@@ -1,0 +1,196 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+function void Standalone.playAudio(u8 sfxId)
+{
+	if (sfxId == MUSIC_EXTRALIFE)
+	{
+		if (extra.life == 1)
+		{	
+			Audio.playAudio("dreamcast")
+		}
+		else if (extra.life == 2)
+		{
+			Audio.playAudio("modern")
+		}
+		return
+	}
+	base.Standalone.playAudio(sfxId)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0x2c)
+    {
+        if (i.am.invincible == 0)
+        {
+            return "2c"
+        }
+		if (i.am.invincible == 1)
+        {
+            return "2c-E"
+        }
+        else if (i.am.invincible == 2)
+        {
+            return "2c-sa2"
+        }
+        else if (i.am.invincible == 3)
+        {
+            return "2c-heroes"
+        }
+		else if (i.am.invincible == 4)
+        {
+            return "2c-adv"
+        }
+		if (i.am.invincible == 5)
+        {
+            return "2c-riders"
+        }
+		if (i.am.invincible == 6)
+        {
+            return "2c-colors"
+        }
+		if (i.am.invincible == 7)
+        {
+            return "2c-lw"
+        }
+		if (i.am.invincible == 8)
+        {
+            return "2c-run"
+        }
+		else if (i.am.invincible == 99)
+		{
+			return "20"
+		}
+    }
+	else if (sfxId == 0x26) // Ending
+	{
+		if (yareyare == 0)
+		{
+			return "26-part1"
+		}
+		else if (yareyare == 1)
+		{
+			return "26-part2"
+		}
+		else if (yareyare == 2)
+		{
+			return "26"
+		}
+		else if (yareyare == 3)
+		{
+			return "26-part4"
+		}
+		else if (yareyare == 4)
+		{
+			return "26_proto"
+		}
+		else if (yareyare == 5)
+		{
+			return "26-part6"
+		}
+		else if (yareyare == 8)
+		{
+			return "15-alt"
+		}
+		else if (yareyare == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x25) // Title Screen
+	{
+		if (title == 0)
+		{
+			return "25-cd"
+		}
+		else if (title == 1)
+		{
+			return "25_sonic3"
+		}
+		else if (title == 2)
+		{
+			return "25"
+		}
+		else if (title == 3)
+		{
+			return "25-heroes"
+		}
+		else if (title == 4)
+		{
+			return "25-su"
+		}
+		else if (title == 5)
+		{
+			return "25-sc"
+		}
+		else if (title == 6)
+		{
+			return "25-gens"
+		}
+		else if (title == 7)
+		{
+			return "25-lw"
+		}
+		else if (title == 8)
+		{
+			return "25-asb"
+		}
+		else if (title == 9)
+		{
+			return "25-eoh"
+		}
+		else if (title == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x27) // Game Over
+	{
+		if (uSuck == 0)
+		{
+			return "27-cd"
+		}
+		else if (uSuck == 1)
+		{
+			return "27-rally"
+		}
+		else if (uSuck == 2)
+		{
+			return "27-rush"
+		}
+		else if (uSuck == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x28)
+	{
+		if (willya == 0)
+		{
+			return "28-dc"
+		}
+		else if (willya == 1)
+		{
+			return "28-colors"
+		}
+		else if (willya == 99)
+		{
+			return "20"
+		}
+	}
+	return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

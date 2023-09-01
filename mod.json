@@ -1,0 +1,854 @@
+{
+  "Metadata":
+  {
+    "Name": "LightMD's BGM Collection with JJBA Themes",
+    "Author": "lightmd.",
+    "Description": "Featuring Different Main Themes as Ending and Stage Clear Jingles",
+    "ModVersion": "3.0",
+    "GameVersion": "23.01.15.0"
+  },
+	"Settings":
+	{
+		"List":
+		[
+			{
+				"InternalName": "dataselect",
+				"DisplayName": "Data Select",
+				"Category": "Menu Music",
+				"Variable": "menu.ost",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "SA1 - Adventure Mode",
+					"01": "SA1 - Trial Mode",
+					"02": "SA2 - Story Mode",
+					"03": "SA2 - Stage Select",
+					"04": "Heroes - Team Select",
+					"05": "Runners - Where To Today?",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "minielnok",
+				"DisplayName": "Act 1 Boss",
+				"Category": "Boss Music",
+				"Variable": "piccolino",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "E-Series",
+					"01": "G.U.N. Mobile",
+					"02": "Robot Carnival / Robot Storm",
+					"03": "Colors 1",
+					"04": "Colors 2",
+					"05": "Colors 3",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "kecske",
+				"DisplayName": "Act 2 Boss",
+				"Category": "Boss Music",
+				"Variable": "theboss",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Egg Hornet",
+					"01": "Unleashed (Day)",
+					"02": "Unleashed (Night)",
+					"03": "Theories of Attack (Runners)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "golurk",
+				"DisplayName": "Sandopolis Act 2",
+				"Category": "Boss Music",
+				"Variable": "golem",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Egg Golem (SA2)",
+					"02": "Act 2 Boss Setting",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "spikes",
+				"DisplayName": "Lava Reef Act 2",
+				"Category": "Boss Music",
+				"Variable": "stromboli",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Egg Emperor (Heroes)",
+					"01": "Egg Emperor (Generations)",
+					"02": "Advance 3",
+					"03": "Act 2 Boss Setting",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "ballz",
+				"DisplayName": "Death Egg Act 2",
+				"Category": "Boss Music",
+				"Variable": "ligma",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Boss!! (CD)",
+					"01": "Advance 3",
+					"02": "Eggman Boss 2 (Mania)",
+					"03": "Act 2 Boss Setting",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "bigarms",
+				"DisplayName": "Big Arms",
+				"Category": "Boss Music",
+				"Variable": "bigarms",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Big Arms (Cash Cash RMX)",
+					"01": "Egg Walker / Egg Viper",
+					"02": "Egg Dragoon",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mechs1s2",
+				"DisplayName": "Mecha (Sonic 1 / 2)",
+				"Category": "Boss Music",
+				"Variable": "faker",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Chaos 0, 2, 4",
+					"01": "ZERO / E-101 Kai",
+					"02": "Faker / For True Story",
+					"03": "Rush / Rush Adventure",
+					"04": "Night / Day (Unleashed)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mech",
+				"DisplayName": "Mecha Sonic",
+				"Category": "Boss Music",
+				"Variable": "meccanico",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Chaos 6 (SA1)",
+					"01": "Chaos 6 (S.A.M.E. Version)",
+					"02": "Egg Walker / Egg Viper",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "smech",
+				"DisplayName": "Super Mecha Sonic",
+				"Category": "Boss Music",
+				"Variable": "biatch",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Open Your Heart",
+					"01": "Live & Learn",
+					"02": "Metal Madness",
+					"03": "Sono Chino Sadame",
+					"04": "Bloody Stream",
+					"05": "Stand Proud",
+					"06": "Great Days (UNITS Ver.)",
+					"07": "Fighting Gold",
+					"08": "STONE OCEAN",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "dezrob",
+				"DisplayName": "Death Egg Robot",
+				"Category": "Boss Music",
+				"Variable": "dezrob",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Egg Walker / Egg Viper",
+					"01": "Dark Gaia",
+					"02": "Nega Wisp Armor (Phase 1)",
+					"03": "lotta feroce",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "aiz1",
+				"DisplayName": "Angel Island Act 1",
+				"Category": "Level Music",
+				"Variable": "enchilada",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "White Jungle",
+					"01": "Emerald Coast 1",
+					"02": "Emerald Coast 2",
+					"03": "Seaside Hill",
+					"04": "Angel Island Zone (SSBB)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "aiz2",
+				"DisplayName": "Angel Island Act 2",
+				"Category": "Level Music",
+				"Variable": "blaze",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Eggman's Facility (White Jungle)",
+					"01": "Emerald Coast 2",
+					"02": "Emerald Coast 2 (S.A.M.E.)",
+					"03": "Green Forest",
+					"04": "Splash Canyon",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "hcz1",
+				"DisplayName": "Hydrocity Act 1",
+				"Category": "Level Music",
+				"Variable": "plz.helpme",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Lost World 1",
+					"01": "Back 2 Back",
+					"02": "Aquarium Park (Act 1)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "hcz2",
+				"DisplayName": "Hydrocity Act 2",
+				"Category": "Level Music",
+				"Variable": "unterwasserboot",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Lost World 2",
+					"01": "Back 2 Back (Blazy Mix)",
+					"02": "Aquarium Park (Act 2)",
+					"03": "Aquarium Park (Act 3)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mgz1",
+				"DisplayName": "Marble Garden Act 1",
+				"Category": "Level Music",
+				"Variable": "knedliky",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Windmill Isle (Day)",
+					"01": "Beyond The Speed Of... (Runners)",
+					"02": "Moonlight Battlefield (Aqua Road)",
+					"03": "Park Avenue",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mgz2",
+				"DisplayName": "Marble Garden Act 2",
+				"Category": "Level Music",
+				"Variable": "pierdole",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Windmill Isle (Night)",
+					"01": "Spring Emotions (Runners)",
+					"02": "Luminous Forest",
+					"03": "Guardian Rock",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "cnz1",
+				"DisplayName": "Carnival Night Act 1",
+				"Category": "Level Music",
+				"Variable": "party",
+				"DefaultValue": "02",
+				"Options":
+				{
+					"00": "Tropical Resort (Act 1)",
+					"01": "Twinkle Park 2",
+					"02": "Casino Park",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "cnz2",
+				"DisplayName": "Carnival Night Act 2",
+				"Category": "Level Music",
+				"Variable": "bingo",
+				"DefaultValue": "03",
+				"Options":
+				{
+					"00": "Tropical Resort (Act 2)",
+					"01": "Tropical Resort (Act 3)",
+					"02": "Casino Park",
+					"03": "Bingo Highway",
+					"04": "Strange Parade (Runners)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "fbz1",
+				"DisplayName": "Flying Battery Act 1",
+				"Category": "Level Music",
+				"Variable": "skyfall",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Sky Deck 1",
+					"01": "Hot Shelter 1",
+					"02": "Sky Rail",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "fbz2",
+				"DisplayName": "Flying Battery Act 2",
+				"Category": "Level Music",
+				"Variable": "ha2rul",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Sky Deck 2",
+					"01": "Hot Shelter 2",
+					"02": "Egg Fleet",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "icz1",
+				"DisplayName": "Ice Cap Act 1",
+				"Category": "Level Music",
+				"Variable": "xgames",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Ice Cap 3 (SA1)",
+					"01": "Ice Cap 3 (S.A.M.E.)",
+					"02": "Cool Edge (Day)",
+					"03": "Magical Snow Day (Runners)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "icz2",
+				"DisplayName": "Ice Cap Act 2",
+				"Category": "Level Music",
+				"Variable": "elsa",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Ice Cap 1 (SA1)",
+					"01": "Cool Edge (Day) (M&S Sochi Remix)",
+					"02": "Press Garden Act 2",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "lbz1",
+				"DisplayName": "Launch Base Act 1",
+				"Category": "Level Music",
+				"Variable": "thx.mcd",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Final Egg 1",
+					"01": "Metal Harbor 1",
+					"02": "Yeh Yeh Rocket",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "lbz2",
+				"DisplayName": "Launch Base Act 2",
+				"Category": "Level Music",
+				"Variable": "kecskefasz",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Final Egg 2",
+					"01": "Eternal Engine",
+					"02": "Yeh Yeh Rocket (Blazy Mix)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mhz1",
+				"DisplayName": "Mushroom Hill Act 1",
+				"Category": "Level Music",
+				"Variable": "igiulamam",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Windy Hill (Zone 1)",
+					"01": "Right There, Right On",
+					"02": "Plant Kingdom (Act 1)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "mhz2",
+				"DisplayName": "Mushroom Hill Act 2",
+				"Category": "Level Music",
+				"Variable": "oiramapap",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Windy Hill (Zone 2)",
+					"01": "Right There, Right On (Blazy Mix)",
+					"02": "Plant Kingdom (Act 2)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "soz1",
+				"DisplayName": "Sandopolis Act 1",
+				"Category": "Level Music",
+				"Variable": "burro",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Sand Hill",
+					"01": "Hidden Base",
+					"02": "Let The Speed Mend It",
+					"03": "Arid Sands (Day)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "soz2",
+				"DisplayName": "Sandopolis Act 2",
+				"Category": "Level Music",
+				"Variable": "piramide",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Pyramid Cave (SA2)",
+					"01": "Pyramid Cave (S.A.M.E.)",
+					"02": "Arid Sands (Night)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "lrz1",
+				"DisplayName": "Lava Reef Act 1",
+				"Category": "Level Music",
+				"Variable": "vesuvio",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Red Mountain 2",
+					"01": "Flame Core (Volcano)",
+					"02": "The Cauldron",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "lrz2",
+				"DisplayName": "Lava Reef Act 2",
+				"Category": "Level Music",
+				"Variable": "etna",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Lost World 3",
+					"01": "Flame Core (The Cavern)",
+					"02": "Crystal Cave",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "hpz",
+				"DisplayName": "Hidden Palace",
+				"Category": "Level Music",
+				"Variable": "ruin",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Mystic Ruins",
+					"01": "Lost World 3",
+					"02": "Flame Core (The Cavern)",
+					"03": "Crystal Cave",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "ssz",
+				"DisplayName": "Sky Sanctuary",
+				"Category": "Level Music",
+				"Variable": "heaven",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Cyberspace 1-2: Flowing",
+					"01": "Sky Sanctuary (Classic RMX)",
+					"02": "Sanctuary Falls",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "dez1",
+				"DisplayName": "Death Egg 1",
+				"Category": "Level Music",
+				"Variable": "pingas",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Crazy Gadget",
+					"01": "Cannon's Core 1",
+					"02": "Eggmanland (Night)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "dez2",
+				"DisplayName": "Death Egg 2",
+				"Category": "Level Music",
+				"Variable": "pingaz",
+				"DefaultValue": "02",
+				"Options":
+				{
+					"00": "Final Rush",
+					"01": "Final Chase",
+					"02": "Cannon's Core 3",
+					"03": "Eggmanland (Day)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "ddz",
+				"DisplayName": "Doomsday",
+				"Category": "Level Music",
+				"Variable": "chaos",
+				"DefaultValue": "06",
+				"Options":
+				{
+					"00": "Open Your Heart",
+					"01": "Live & Learn",
+					"02": "Perfect Dark Gaia",
+					"03": "Sono Chino Sadame",
+					"04": "Bloody Stream",
+					"05": "Stand Proud",
+					"06": "Great Days (UNITS Ver.)",
+					"07": "Fighting Gold",
+					"08": "STONE OCEAN",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "knox",
+				"DisplayName": "Knuckles' Theme",
+				"Category": "Knock, knock?",
+				"Variable": "knox",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Unknown from M.E. (SA1)",
+					"01": "Unknown from M.E. (SA2)",
+					"02": "Unknown from K.N.U.C.K.L.E.S.",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "kenpenders",
+				"DisplayName": "Knuckles Battle",
+				"Category": "Hidden Palace",
+				"Variable": "bossknux",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Boss: Event (SA1)",
+					"01": "Suitable Opponent (SA2)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "eggman",
+				"DisplayName": "Eggman/Robotnik Cutscene",
+				"Category": "Hidden Palace",
+				"Variable": "eggman",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Adventure",
+					"01": "Adventure 2",
+					"02": "Sonic '06",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "start",
+				"DisplayName": "Title Screen",
+				"Category": "Jingles",
+				"Variable": "title",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Sonic CD",
+					"01": "Adventure",
+					"02": "Adventure 2",
+					"03": "Heroes",
+					"04": "Unleashed",
+					"05": "Colors",
+					"06": "Generations",
+					"07": "Lost World",
+					"08": "JJBA: All-Star Battle",
+					"09": "JJBA: Eyes of Heaven",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "1UpStyle",
+				"DisplayName": "1-Up",
+				"Category": "Jingles",
+				"Variable": "extra.life",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Default",
+					"01": "Dreamcast",
+					"02": "Modern"
+				}
+			},
+			{
+				"InternalName": "ActClear",
+				"DisplayName": "Act Clear",
+				"Category": "Jingles",
+				"Variable": "clear.jingle",
+				"DefaultValue": "04",
+				"Options":
+				{
+					"00": "Act-Specific, 'Sono Chi No Sadame' in LBZ2",
+					"01": "Act-Specific, 'Bloody Stream' in LBZ2",
+					"02": "Act-Specific, 'Stardust Crusaders' in LBZ2",
+					"03": "Act-Specific, 'CNBT' in LBZ2",
+					"04": "Act-Specific, 'Traitor's Requiem' in LBZ2",
+					"05": "Act-Specific, 'STONE OCEAN' in LBZ2",
+					"06": "Act-Specific",
+					"07": "Sonic CD (JP)",
+					"08": "Before/After The Sequel",
+					"09": "Adventure",
+					"10": "Adventure 2",
+					"11": "SA2 (Act-Specific)",
+					"12": "True Act-Specific",
+					"13": "Rivals 2",
+					"14": "Unleashed",
+					"15": "Sono Chino Sadame",
+					"16": "Bloody Stream",
+					"17": "Stand Proud",
+					"18": "Crazy Noisy Bizarre Town",
+					"19": "Traitor's Requiem",
+					"20": "STONE OCEAN",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "Invincibility",
+				"DisplayName": "Invincibility",
+				"Category": "Jingles",
+				"Variable": "i.am.invincible",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Adventure",
+					"01": "Adventure - Jingle E",
+					"02": "Adventure 2",
+					"03": "Heroes",
+					"04": "Advance 2 / 3",
+					"05": "Riders",
+					"06": "Colors",
+					"07": "Heroes (Lost World)",
+					"08": "Runners",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "isThatASupra",
+				"DisplayName": "Super Theme",
+				"Category": "Jingles",
+				"Variable": "supra",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Normal level",
+					"01": "Sped-up level",
+					"02": "SA1",
+					"03": "SA2",
+					"04": "Heroes",
+					"05": "Sonic '06",
+					"06": "Colors",
+					"07": "Colors Ultimate",
+					"08": "Sonic 4",
+					"09": "Sonic 4 (WiiWare)",
+					"10": "Lost World",
+					"11": "Sono Chino Sadame",
+					"12": "Bloody Stream",
+					"13": "Stand Proud",
+					"14": "chase",
+					"15": "Fighting Gold",
+					"16": "STONE OCEAN",
+					"17": "Invincibility (SA1)",
+					"18": "Adventure - Jingle E",
+					"19": "Invincibility (SA2)",
+					"20": "Invincibility (Heroes)",
+					"21": "Advance 2 / 3",
+					"22": "Riders",
+					"23": "Heroes (Lost World)",
+					"24": "Runners",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "nomore",
+				"DisplayName": "Game Over",
+				"Category": "Jingles",
+				"Variable": "uSuck",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Sonic CD (JP)",
+					"01": "Sega Rally",
+					"02": "Sonic Rush",
+					"03": "Generations",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "ormore",
+				"DisplayName": "Continue",
+				"Category": "Jingles",
+				"Variable": "willya",
+				"DefaultValue": "00",
+				"Options":
+				{
+					"00": "Dreamcast",
+					"01": "Modern",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "jojos",
+				"DisplayName": "Theme",
+				"Category": "Ending",
+				"Variable": "yareyare",
+				"DefaultValue": "04",
+				"Options":
+				{
+					"00": "Jonathan (Fukutsu)",
+					"01": "Joseph (Overdrive)",
+					"02": "Jotaro (Startust Crusaders)",
+					"03": "Josuke (DIU ~ Stand Activated ~)",
+					"04": "Giorno (il vento d'oro)",
+					"05": "Jolyne (Stone Ocean)",
+					"08": "Sky Sanctuary",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "dirt5",
+				"DisplayName": "Menu Music",
+				"Category": "Competition Mode",
+				"Variable": "dorifto",
+				"DefaultValue": "03",
+				"Options":
+				{
+					"00": "SA1 - Trial Mode",
+					"01": "SA2",
+					"02": "Heroes",
+					"03": "Riders",
+					"04": "All-Stars Racing Transformed",
+					"05": "Team Sonic Racing",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "izlake",
+				"DisplayName": "Azure Lake",
+				"Category": "Competition Mode",
+				"Variable": "garda",
+				"DefaultValue": "03",
+				"Options":
+				{
+					"00": "Windy Valley 1",
+					"01": "Windy Valley 3",
+					"02": "Sea Gate",
+					"03": "Splash Canyon",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "pop",
+				"DisplayName": "Balloon Park",
+				"Category": "Competition Mode",
+				"Variable": "prelog.hr",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Twinkle Park 1",
+					"01": "SEGA Carnival",
+					"02": "Mission 4 (Generations)",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "gadget",
+				"DisplayName": "Chrome Gadget",
+				"Category": "Competition Mode",
+				"Variable": "inspector",
+				"DefaultValue": "02",
+				"Options":
+				{
+					"00": "Prison Lane",
+					"01": "Final Fortress",
+					"02": "Egg Factory",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "sandy",
+				"DisplayName": "Desert Palace",
+				"Category": "Competition Mode",
+				"Variable": "darude",
+				"DefaultValue": "02",
+				"Options":
+				{
+					"00": "Sand Hill",
+					"01": "Wild Canyon",
+					"02": "Sand Ruins",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+			{
+				"InternalName": "cavern",
+				"DisplayName": "Endless Mine",
+				"Category": "Competition Mode",
+				"Variable": "barite",
+				"DefaultValue": "01",
+				"Options":
+				{
+					"00": "Flame Core (The Cavern)",
+					"01": "Green Cave",
+					"02": "Honeycomb Highway",
+					"99": "THE RUSSIAN EXPERIENCE",
+				}
+			},
+
+		]
+	}
+}

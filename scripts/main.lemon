@@ -1,0 +1,57 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+// I really love using codenames, so please, forgive me for this kind of habit.
+
+include musica/?
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0x1f && global.zone_act == 0x1601) // I wonder why this script doesn't work in another .lemon file...
+	{
+		if (bossknux == 0)
+		{
+			return "masteremerald"
+		}
+		else if (bossknux == 1)
+		{
+			return "coldsteel-vs-knox"
+		}
+		else if (bossknux == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x18 || sfxId == 0x2e || (global.zone_act == 0x1601 && (sfxId == 0x19 || sfxId == 0xf6 || sfxId == 0xf7)))
+	{
+		if (global.zone_act == 0x1601) // Eggman/Robotnik's Master Emerald cutscene
+		{
+			if (eggman == 0)
+			{
+				return "egg-sa1"
+			}
+			else if (eggman == 1)
+			{
+				return "egg-sa2"
+			}
+			else if (eggman == 2)
+			{
+				return "egg-06"
+			}
+		}
+	}
+    return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

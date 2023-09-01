@@ -1,0 +1,855 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+function void DataSelect.setup() // Data Select
+{
+	base.DataSelect.setup()
+
+	if (menu.ost == 0)
+	{
+		Audio.playAudio("1adventuremode", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 1)
+	{
+		Audio.playAudio("1trialmode", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 2)
+	{
+		Audio.playAudio("2storymode", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 3)
+	{
+		Audio.playAudio("2stageselect", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 4)
+	{
+		Audio.playAudio("shselect", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 5)
+	{
+		Audio.playAudio("run-select", AudioContext.CONTEXT_MUSIC)
+	}
+	else if (menu.ost == 99)
+	{
+	Audio.playAudio("20", AudioContext.CONTEXT_MUSIC)
+	}
+}
+
+function u64 setMenuMusic(u8 sfxId)
+{
+	u64 soundkey
+	if (sfxId == 0x2f && global.game_mode == 0x4c)
+	{
+		if (mainmenu == 0)
+		{
+			return "2f"
+		}
+		else if (mainmenu == 1)
+		{
+			return "2f-sa2"
+		}
+		else if (mainmenu == 2)
+		{
+			return "menu-heroes"
+		}
+		else if (mainmenu == 99)
+		{
+			return "menu-heroes"
+		}
+	}
+	return soundkey
+}
+
+function u64 setCompetitionMusic(u8 sfxId)
+{
+	u64 soundkey
+	if (sfxId == 0x2d)
+	{
+		if (dorifto == 0)
+		{
+			soundkey = "2d-sa1"
+		}
+		else if (dorifto == 1)
+		{
+			soundkey = "2d-sa2"
+		}
+		else if (dorifto == 2)
+		{
+			soundkey = "2d"
+		}
+		else if (dorifto == 3)
+		{
+			soundkey = "2d-riders"
+		}
+		else if (dorifto == 4)
+		{
+			soundkey = "2d_proto"
+		}
+		else if (dorifto == 5)
+		{
+			soundkey = "2d-tsr"
+		}
+		else if (dorifto == 99)
+		{
+			soundkey = "20"
+		}
+	}
+	else if (sfxId == 0x20)
+	{
+		if (global.zone == 0x0e)
+		{
+			if (garda == 1)
+			{
+				soundkey = "20-alt"
+			}
+			else if (garda == 2)
+			{
+				soundkey = "20-alt2"
+			}
+			else if (garda == 3)
+			{
+				soundkey = "02-alt2"
+			}
+			else if (garda == 99)
+			{
+				soundkey = "20"
+			}
+		}
+	}
+	else if (sfxId == 0x21)
+	{
+		if (global.zone == 0x0f)
+		{
+			if (prelog.hr == 0)
+			{
+				soundkey = "07_proto"
+			}
+			else if (prelog.hr == 1)
+			{
+				soundkey = "21-riders"
+			}
+			else if (prelog.hr == 2)
+			{
+				soundkey = "21"
+			}
+			else if (prelog.hr == 99)
+			{
+				soundkey = "20"
+			}
+		}
+	}
+	else if (sfxId == 0x22)
+	{
+		if (global.zone == 0x11)
+		{
+			if (inspector == 0)
+			{
+				soundkey = "22"
+			}
+			if (inspector == 1)
+			{
+				soundkey = "22-alt"
+			}
+			else if (inspector == 2)
+			{
+				soundkey = "22-riders"
+			}
+			else if (inspector == 99)
+			{
+				soundkey = "20"
+			}
+		}
+	}
+	else if (sfxId == 0x23)
+	{
+		if (global.zone == 0x10)
+		{
+			if (darude == 0)
+			{
+				soundkey = "11-sa1"
+			}
+			if (darude == 1)
+			{
+				soundkey = "23"
+			}
+			else if (darude == 2)
+			{
+				soundkey = "23-riders"
+			}
+			else if (darude == 99)
+			{
+				soundkey = "20"
+			}
+		}
+	}
+	else if (sfxId == 0x24)
+	{
+		if (global.zone == 0x12)
+		{
+			if (barite == 0)
+			{
+				soundkey = "14-alt"
+			}
+			else if (barite == 1)
+			{
+				soundkey = "24-riders"
+			}
+			else if (barite == 2)
+			{
+				soundkey = "24"
+			}
+			else if (barite == 99)
+			{
+				soundkey = "20"
+			}
+		}
+	}
+	return soundkey
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0x01) // AIZ1
+	{
+		if (global.zone_act == 0x0000)
+		{
+			if (enchilada == 1)
+			{
+				return "01-alt"
+			}
+			else if (enchilada == 2)
+			{
+				return "01-alt2"
+			}
+			else if (enchilada == 3)
+			{
+				return "01-alt3"
+			}
+			else if (enchilada == 4)
+			{
+				return "01-old"
+			}
+			else if (enchilada == 99)
+			{
+				return "20"
+			}
+		}
+	}
+	else if (sfxId == 0x02) // AIZ2
+	{
+		if (blaze == 1)
+		{
+			return "01-alt2"
+		}
+		else if (blaze == 2)
+		{
+			return "02-same"
+		}
+		else if (blaze == 3)
+		{
+			return "02-alt"
+		}
+		else if (blaze == 4)
+		{
+			return "02-alt2"
+		}
+		else if (blaze == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x03) // HCZ1
+	{
+		if (plz.helpme == 0)
+		{
+			return "03-sa1"
+		}
+		if (plz.helpme == 1)
+		{
+			return "03-rush"
+		}
+		else if (plz.helpme == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x04) // HCZ2
+	{
+		if (unterwasserboot == 0)
+		{
+			return "04-sa1"
+		}
+		else if (unterwasserboot == 1)
+		{
+			return "04-rush"
+		}
+		if (unterwasserboot == 3)
+		{
+			return "04-alt"
+		}
+		else if (unterwasserboot == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x05) // MGZ1
+	{
+		
+		if (knedliky == 1)
+		{
+			return "05-run"
+		}
+		else if (knedliky == 2)
+		{
+			return "05-legacy"
+		}
+		if (knedliky == 3)
+		{
+			return "05-alt"
+		}
+		else if (knedliky == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x06) // MGZ2
+	{
+		if (pierdole == 1)
+		{
+			return "06-run"
+		}
+		else if (pierdole == 2)
+		{
+			return "06-legacy"
+		}
+		else if (pierdole == 3)
+		{
+			return "06-alt"
+		}
+		else if (pierdole == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x07) // CNZ1
+	{
+		if (party == 0)
+		{
+			return "07"
+		}
+		else if (party == 1)
+		{
+			return "07_proto"
+		}
+		else if (party == 2)
+		{
+			return "08_proto"
+		}
+		else if (party == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x08) // CNZ2
+	{
+		if (bingo == 0)
+		{
+			return "08-alt"
+		}
+		else if (bingo == 1)
+		{
+			return "08"
+		}
+		else if (bingo == 2)
+		{
+			return "08_proto"
+		}
+		else if (bingo == 3)
+		{
+			return "08-bingo"
+		}
+		else if (bingo == 4)
+		{
+			return "08-run"
+		}
+		else if (bingo == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x09) // FBZ1
+	{
+		if (skyfall == 1)
+		{
+			return "09-alt"
+		}
+
+		else if (skyfall == 2)
+		{
+			return "09-legacy"
+		}
+		else if (skyfall == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x0a) // FBZ2
+	{
+		if (ha2rul == 1)
+		{
+			return "0a-alt"
+		}
+		else if (ha2rul == 2)
+		{
+			return "0a-legacy"
+		}
+		else if (ha2rul == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x0b) // ICZ1
+	{
+		if (xgames == 2)
+		{
+			return "0b"
+		}
+		else if (xgames == 1)
+		{
+			return "0b_proto"
+		}
+		else if (xgames == 0)
+		{
+			return "0b-sa1"
+		}
+		else if (xgames == 3)
+		{
+			return "0b-run"
+		}
+		else if (xgames == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x0c) // ICZ2
+	{
+		if (elsa == 1)
+		{
+			return "0c"
+		}
+		else if (elsa == 2)
+		{
+			return "0c_proto"
+		}
+		else if (elsa == 0)
+		{
+			return "0c-sa1"
+		}
+		else if (elsa == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x0d) // LBZ1
+	{
+		if (thx.mcd == 0)
+		{
+			return "0d_proto"
+		}
+		else if (thx.mcd == 1)
+		{
+			return "0d"
+		}
+		else if (thx.mcd == 2)
+		{
+			return "0d-rush"
+		}
+
+		else if (thx.mcd == 99)
+		{
+			return "20"
+		}
+	}
+	if (sfxId == 0x0e) // LBZ2
+	{
+		if (kecskefasz == 0)
+		{
+			return "0e_proto"
+		}
+		else if (kecskefasz == 1)
+		{
+			return "0e"
+		}
+		else if (kecskefasz == 2)
+		{
+			return "0e-rush"
+		}
+
+		else if (kecskefasz == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x0f) // MHZ1
+	{
+		if (igiulamam == 1)
+		{
+			return "0f-alt"
+		}
+		else if (igiulamam == 2)
+		{
+			return "0f-ra"
+		}
+		else if (igiulamam == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x10) // MHZ2
+	{
+		if (oiramapap == 1)
+		{
+			return "10-alt"
+		}
+		else if (oiramapap == 2)
+		{
+			return "10-ra"
+		}
+		else if (oiramapap == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x11) // SOZ1
+	{
+		if (burro == 0)
+		{
+			return "11-sa1"
+		}
+		if (burro == 2)
+		{
+			return "11-sr"
+		}
+		if (burro == 3)
+		{
+			return "11-su"
+		}
+		else if (burro == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x12) // SOZ2
+	{
+		if (piramide == 0)
+		{
+			return "12-sa2"
+		}
+		if (piramide == 2)
+		{
+			return "12-su"
+		}
+		else if (piramide == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x13) // LRZ1
+	{
+		if (vesuvio == 1)
+		{
+			return "13-legacy"
+		}
+		else if (vesuvio == 2)
+		{
+			return "13-alt"
+		}
+		else if (vesuvio == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x14)
+	{
+		if (global.zone_act.apparent == 0x0901) // LRZ2
+		{
+			if (etna == 1)
+			{
+				return "14-alt"
+			}
+			else if (etna == 2)
+			{
+				return "14-alt2"
+			}
+			else if (etna == 99)
+			{
+				return "20"
+			}
+		}
+		else if (global.zone_act.apparent == 0x1601 || global.zone_act.apparent == 0x1701) // HPZ
+		{
+			if (ruin == 0)
+			{
+				soundkey = "mysticumbreon"
+			}
+			else if (ruin == 1)
+			{
+				soundkey = "14"
+			}
+			else if (ruin == 2)
+			{
+				soundkey = "14-alt"
+			}
+			else if (ruin == 3)
+			{
+				return "14-alt2"
+			}
+			else if (ruin == 99)
+			{
+				return "20"
+			}
+		}
+	}
+	else if (sfxId == 0x15) // SSZ
+    {
+		if (heaven == 1)
+		{
+			return "15-alt"
+		}
+		else if (heaven == 2)
+		{
+			return "15-alt2"
+		}
+		else if (heaven == 99)
+		{
+			return "20"
+		}
+    }
+	else if (sfxId == 0x16) // DEZ1
+	{
+		if (pingas == 1)
+		{
+			return "16-cc"
+		}
+		if (pingas == 2)
+		{
+			return "16-pingas"
+		}
+		else if (pingas == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x17) // DEZ2
+	{
+		if (pingaz == 1)
+		{
+			return "17-alt"
+		}
+		if (pingaz == 2)
+		{
+			return "17-cc"
+		}
+		else if (pingaz == 3)
+		{
+			return "17-pingas"
+		}
+		else if (pingaz == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x1f) // Knuckles
+	{
+		if (knox == 0)
+		{
+			return "1f_sonic3"
+		}
+		else if (knox == 1)
+		{
+			return "1f"
+		}
+		else if (knox == 2)
+		{
+			return "1f_proto"
+		}
+		else if (knox == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x2f)
+	{
+		if (mainmenu == 1)
+		{
+			return "2f-sa2"
+		}
+		else if (mainmenu == 2)
+		{
+			return "28_sonic3"
+		}
+		else if (mainmenu == 3)
+		{
+			return "menu-heroes"
+		}
+		else if (mainmenu == 99)
+		{
+			return "20"
+		}
+	}
+	if (sfxId == 0x2d) // Competition Menu
+	{
+		if (dorifto == 0)
+		{
+			return "1trialmode"
+		}
+		else if (dorifto == 1)
+		{
+			return "2d-sa2"
+		}
+		else if (dorifto == 2)
+		{
+			return "2d"
+		}
+		else if (dorifto == 3)
+		{
+			return "2d-riders"
+		}
+		else if (dorifto == 4)
+		{
+			return "2d_proto"
+		}
+		else if (dorifto == 5)
+		{
+			return "2d-tsr"
+		}
+		else if (dorifto == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x20) // Azure Lake
+	{
+		if (garda == 1)
+		{
+			return "20-alt"
+		}
+		else if (garda == 2)
+		{
+			return "20-alt2"
+		}
+		else if (garda == 3)
+		{
+			return "02-alt2"
+		}
+		else if (garda == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x21) // Balloon Park
+	{
+		if (prelog.hr == 0)
+		{
+			return "07_proto"
+		}
+		else if (prelog.hr == 1)
+		{
+			return "21-riders"
+		}
+		else if (prelog.hr == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x23) // Chrome Gadget
+	{
+		if (inspector == 0)
+		{
+			return "23"
+		}
+		if (inspector == 1)
+		{
+			return "22-alt"
+		}
+		else if (inspector == 2)
+		{
+			return "22-riders"
+		}
+		else if (inspector == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x22) // Desert Palace
+	{
+		if (darude == 0)
+		{
+			return "11-sa1"
+		}
+		else if (darude == 1)
+		{
+			return "22"
+		}
+		else if (darude == 2)
+		{
+			return "23-riders"
+		}
+		else if (darude == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x24) // Endless Mine
+	{
+		if (barite == 0)
+		{
+			return "14-alt"
+		}
+		else if (barite == 1)
+		{
+			return "24-riders"
+		}
+		else if (barite == 2)
+		{
+			return "24"
+		}
+		else if (barite == 99)
+		{
+			return "20"
+		}
+	}
+	else if (sfxId == 0x2f && global.game_mode == 0x4c)
+	{
+		if (mainmenu == 0)
+		{
+			return "2f"
+		}
+		else if (mainmenu == 1)
+		{
+			return "2f-sa2"
+		}
+		else if (mainmenu == 2)
+		{
+			return "menu-heroes"
+		}
+		else if (mainmenu == 99)
+		{
+			return "menu-heroes"
+		}
+	}
+	return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

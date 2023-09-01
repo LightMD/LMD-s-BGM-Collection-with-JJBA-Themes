@@ -1,0 +1,588 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+function u64 setClearMusic()	// The source code is from ShadowXeldron himself
+{
+
+    u64 soundkey
+    if (clear.jingle == 07)
+    {
+        soundkey = "29"
+    }
+
+    else if (clear.jingle == 08)
+	{
+        if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+		{
+			soundkey = "29-act2f"
+		}
+		else
+		{
+			soundkey = "29-act2"
+		}
+    }
+	else if (clear.jingle == 09)
+    {
+        soundkey = "29-sa1"
+    }
+	else if (clear.jingle == 10)
+    {
+        soundkey = "29-sa2"
+    }
+	else if (clear.jingle == 11)
+    {
+		if (global.zone_act.apparent == 0x0001 || global.zone_act.apparent == 0x0101 || global.zone_act.apparent == 0x0201 || global.zone_act.apparent == 0x0301 || global.zone_act.apparent == 0x0401 || global.zone_act.apparent == 0x0501 || global.zone_act.apparent == 0x0701 || global.zone_act.apparent == 0x0801 || global.zone_act.apparent == 0x0901 || global.zone_act.apparent == 0x1600)
+        {
+			soundkey = "29-rivals1"
+		}
+		else if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+		{
+			soundkey = "rivals-win"
+		}
+		else
+		{
+			soundkey = "29-sa2"
+		}
+    }
+	else if (clear.jingle == 12)
+		{
+			if (global.zone_act.apparent == 0x0000)
+			{
+				soundkey = "29-sa1"
+			}
+			else if (global.zone_act.apparent == 0x0001)
+			{
+				soundkey = "32-joseph"
+			}
+			else if (global.zone_act.apparent == 0x0100)
+			{
+				soundkey = "29-mania"
+			}
+			else if (global.zone_act.apparent == 0x0101)
+			{
+				soundkey = "29-munused"
+			}
+			else if (global.zone_act.apparent == 0x0200)
+			{
+				soundkey = "29"
+			}
+			else if (global.zone_act.apparent == 0x0201)
+			{
+				soundkey = "29-act2"
+			}
+			else if (global.zone_act.apparent == 0x0300)
+			{
+				soundkey = "29-shuffle"
+			}
+			else if (global.zone_act.apparent == 0x0301)
+			{
+				soundkey = "32-josuke"
+			}
+			else if (global.zone_act.apparent == 0x0400)
+			{
+				soundkey = "29-sa2"
+			}
+			else if (global.zone_act.apparent == 0x0401)
+			{
+				soundkey = "29-rivals1"
+			}
+			else if (global.zone_act.apparent == 0x0500)
+			{
+				soundkey = "29-su"
+			}
+			else if (global.zone_act.apparent == 0x0501)
+			{
+				soundkey = "29-suboss"
+			}
+			else if (global.zone_act.apparent == 0x0600)
+			{
+				soundkey = "29-ra"
+			}
+			if (global.zone_act.apparent == 0x0601)
+			{
+				soundkey = "29-act2f"
+			}
+			else if (global.zone_act.apparent == 0x0700)
+			{
+				soundkey = "29-lw"
+			}
+			else if (global.zone_act.apparent == 0x0701)
+			{
+				soundkey = "29-colors"
+			}
+			else if (global.zone_act.apparent == 0x0800)
+			{
+				soundkey = "29-sr"
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				soundkey = "32_sonic3"
+			}
+			else if(global.zone_act.apparent == 0x0900)
+			{
+				soundkey = "29-bk"
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				soundkey = "32-jonathan"
+			}
+			else if (global.zone_act.apparent == 0x0a00)
+			{
+				soundkey = "rivals-win"
+			}
+			else if (global.zone_act.apparent == 0x0b00)
+			{
+				soundkey = "32"
+			}
+		}
+	else if (clear.jingle == 14)
+    {
+		if (global.zone_act.apparent == 0x0001 || global.zone_act.apparent == 0x0101 || global.zone_act.apparent == 0x0201 || global.zone_act.apparent == 0x0301 || global.zone_act.apparent == 0x0401 || global.zone_act.apparent == 0x0501 || global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00 || global.zone_act.apparent == 0x0701 || global.zone_act.apparent == 0x0801 || global.zone_act.apparent == 0x0901 || global.zone_act.apparent == 0x1600)
+        {
+			soundkey = "29-suboss"
+		}
+		else
+		{
+			soundkey = "29-su"
+		}
+    }
+    else if (clear.jingle == 15)
+    {
+        soundkey = "32-jonathan"
+    }
+	else if (clear.jingle == 16)
+    {
+        soundkey = "32-joseph"
+    }
+	else if (clear.jingle == 17)
+    {
+        soundkey = "32-jotaro"
+    }
+	else if (clear.jingle == 18)
+    {
+        soundkey = "32-josuke"
+    }
+	else if (clear.jingle == 19)
+    {
+        soundkey = "32-giorno"
+    }
+	else if (clear.jingle == 20)
+    {
+        soundkey = "32-jolyne"
+    }
+	else if (clear.jingle == 13)
+    {
+        soundkey = "rivals-win"
+    }
+    else if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+    {
+        if (clear.jingle == 00)
+        {
+            soundkey = "32-jonathan"
+        }
+
+        else if (clear.jingle == 01)
+        {
+            soundkey = "32-joseph"
+        }
+        else if (clear.jingle == 02)
+        {
+            soundkey = "32_sonic3"
+        }
+		else if (clear.jingle == 03)
+        {
+            soundkey = "32-josuke"
+        }
+		else if (clear.jingle == 04)
+        {
+            soundkey = "32"
+        }
+		else if (clear.jingle == 05)
+        {
+            soundkey = "32-jolyne"
+        }
+		else if (clear.jingle == 06)
+        {
+            soundkey = "29-act2f"
+        }
+    }
+    else if (global.zone_act.apparent == 0x0001 || global.zone_act.apparent == 0x0101 || global.zone_act.apparent == 0x0201 || global.zone_act.apparent == 0x0301 || global.zone_act.apparent == 0x0401 || global.zone_act.apparent == 0x0501 || global.zone_act.apparent == 0x0701 || global.zone_act.apparent == 0x0801 || global.zone_act.apparent == 0x0901 || global.zone_act.apparent == 0x1600)
+    {
+        soundkey = "29-act2"
+    }
+
+    else // Just fall back on the original clear theme
+    {
+        soundkey = "29"
+    }
+    return soundkey
+}
+// ShadowXeldron's code ends here
+
+function u64 Standalone.getModdedSoundKey(u64 soundkey, u8 sfxId, u8 soundRegType)
+{
+    if (sfxId == 0x29) // Act Clear music setup
+    {
+        if (global.game_mode == 0x48) // Special stage check
+        {
+            return "32-special" 
+        }
+        if (clear.jingle != 255)
+        {
+            return setClearMusic()
+        }
+    }
+	else if (global.zone_act.apparent == 0x0601)
+	{
+		if (sfxId == 0x29)
+		{
+			if (clear.jingle == 00)
+			{
+				return "32-jonathan"
+			}
+
+			else if (clear.jingle == 01)
+			{
+				return "32-joseph"
+			}
+			else if (clear.jingle == 02)
+			{
+				return "32_sonic3"
+			}
+			else if (clear.jingle == 03)
+			{
+				return "32-josuke"
+			}
+			else if (clear.jingle == 04)
+			{
+				return "32"
+			}
+			else if (clear.jingle == 05)
+			{
+				return "32-jolyne"
+			}
+			else if (clear.jingle == 06)
+			{
+				return "29-act2f"
+			}
+		}
+	}
+	else if (sfxId == 0x29)
+	{
+		if (clear.jingle == 07)
+		{
+			return "29"
+		}
+
+		else if (clear.jingle == 08)
+		{
+			return "29-act2"
+		}
+
+		else if (clear.jingle == 09)
+		{
+			return "32-jonathan"
+		}
+		else if (clear.jingle == 10)
+		{
+			return "32-joseph"
+		}
+		else if (clear.jingle == 11)
+		{
+			return "32-jotaro"
+		}
+		else if (clear.jingle == 12)
+		{
+			return "32-josuke"
+		}
+		else if (clear.jingle == 13)
+		{
+			return "32-giorno"
+		}
+		else if (clear.jingle == 14)
+		{
+			return "32-jolyne"
+		}
+		else if (clear.jingle == 15)
+		{
+			return "rivals-win"
+		}
+	}
+	else if (sfxId == 0x32)
+	{
+			if (clear.jingle == 00)
+			{
+				return "32-jonathan"
+			}
+
+			else if (clear.jingle == 01)
+			{
+				return "32-joseph"
+			}
+			else if (clear.jingle == 02)
+			{
+				return "32_sonic3"
+			}
+			else if (clear.jingle == 03)
+			{
+				return "32-josuke"
+			}
+			else if (clear.jingle == 04)
+			{
+				return "32"
+			}
+			else if (clear.jingle == 05)
+			{
+				return "32-jolyne"
+			}
+	}
+	else if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+	{
+		if (sfxId == 0x29)
+		{
+			if (clear.jingle == 00)
+			{
+				return "32-jonathan"
+			}
+
+			else if (clear.jingle == 01)
+			{
+				return "32-joseph"
+			}
+			else if (clear.jingle == 02)
+			{
+				return "32_sonic3"
+			}
+			else if (clear.jingle == 03)
+			{
+				return "32-josuke"
+			}
+			else if (clear.jingle == 04)
+			{
+				return "32"
+			}
+			else if (clear.jingle == 05)
+			{
+				return "32-jolyne"
+			}
+			else if (clear.jingle == 06)
+			{
+				return "29-act2f"
+			}
+		}
+	}
+	else if (sfxId == 0x29)
+	{
+		if (clear.jingle == 07)
+		{
+			return "29"
+		}
+
+		else if (clear.jingle == 08)
+		{
+			if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+			{
+				return "29-act2f"
+			}
+			else
+			{
+				return "29-act2"
+			}
+		}
+		else if (clear.jingle == 09)
+		{
+			return "29-sa1"
+		}
+		else if (clear.jingle == 10)
+		{
+			return "29-sa2"
+		}
+		else if (clear.jingle == 11)
+		{
+			if (global.zone_act.apparent == 0x0001 || global.zone_act.apparent == 0x0101 || global.zone_act.apparent == 0x0201 || global.zone_act.apparent == 0x0301 || global.zone_act.apparent == 0x0401 || global.zone_act.apparent == 0x0501 || global.zone_act.apparent == 0x0701 || global.zone_act.apparent == 0x0801 || global.zone_act.apparent == 0x0901 || global.zone_act.apparent == 0x1600)
+			{
+				return "29-rivals1"
+			}
+			else if (global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00)
+			{
+				return "rivals-win"
+			}
+			else
+			{
+				return "29-sa2"
+			}
+		}
+		else if (clear.jingle == 14)
+		{
+			if (global.zone_act.apparent == 0x0001 || global.zone_act.apparent == 0x0101 || global.zone_act.apparent == 0x0201 || global.zone_act.apparent == 0x0301 || global.zone_act.apparent == 0x0401 || global.zone_act.apparent == 0x0501 || global.zone_act.apparent == 0x0601 || global.zone_act.apparent == 0x0a00 || global.zone_act.apparent == 0x0701 || global.zone_act.apparent == 0x0801 || global.zone_act.apparent == 0x0901 || global.zone_act.apparent == 0x1600)
+			{
+				return "29-suboss"
+			}
+			else
+			{
+				return "29-su"
+			}
+		}
+		else if (clear.jingle == 15)
+		{
+			return "32-jonathan"
+		}
+		else if (clear.jingle == 16)
+		{
+			return "32-joseph"
+		}
+		else if (clear.jingle == 17)
+		{
+			return "32-jotaro"
+		}
+		else if (clear.jingle == 18)
+		{
+			return "32-josuke"
+		}
+		else if (clear.jingle == 19)
+		{
+			return "32-giorno"
+		}
+		else if (clear.jingle == 20)
+		{
+			return "32-jolyne"
+		}
+		else if (clear.jingle == 13)
+		{
+			return "rivals-win"
+		}
+		else if (clear.jingle == 12) // Just some fixing here and there...
+		{
+			if (global.zone_act.apparent == 0x0000)
+			{
+				return "29-sa1"
+			}
+			else if (global.zone_act.apparent == 0x0001)
+			{
+				return "32-joseph"
+			}
+			else if (global.zone_act.apparent == 0x0100)
+			{
+				return "29-mania"
+			}
+			else if (global.zone_act.apparent == 0x0101)
+			{
+				return "29-munused"
+			}
+			else if (global.zone_act.apparent == 0x0200)
+			{
+				return "29"
+			}
+			else if (global.zone_act.apparent == 0x0201)
+			{
+				return "29-act2"
+			}
+			else if (global.zone_act.apparent == 0x0300)
+			{
+				return "29-shuffle"
+			}
+			else if (global.zone_act.apparent == 0x0301)
+			{
+				return "32-josuke"
+			}
+			else if (global.zone_act.apparent == 0x0400)
+			{
+				return "29-sa2"
+			}
+			else if (global.zone_act.apparent == 0x0401)
+			{
+				return "29-rivals1"
+			}
+			else if (global.zone_act.apparent == 0x0500)
+			{
+				return "29-su"
+			}
+			else if (global.zone_act.apparent == 0x0501)
+			{
+				return "29-suboss"
+			}
+			else if (global.zone_act.apparent == 0x0600)
+			{
+				return "29-ra"
+			}
+			if (global.zone_act.apparent == 0x0601)
+			{
+				return "29-act2f"
+			}
+			else if (global.zone_act.apparent == 0x0700)
+			{
+				return "29-lw"
+			}
+			else if (global.zone_act.apparent == 0x0701)
+			{
+				return "29-colors"
+			}
+			else if (global.zone_act.apparent == 0x0800)
+			{
+				return "29-sr"
+			}
+			else if (global.zone_act.apparent == 0x0801)
+			{
+				return "32_sonic3"
+			}
+			else if (global.zone_act.apparent == 0x0900)
+			{
+				return "29-bk"
+			}
+			else if (global.zone_act.apparent == 0x1600)
+			{
+				return "32-jonathan"
+			}
+			else if (global.zone_act.apparent == 0x0a00)
+			{
+				return "rivals-win"
+			}
+			else if (global.zone_act.apparent == 0x0b00)
+			{
+				return "32"
+			}
+		}
+	}
+	else if (sfxId == 0x32)
+	{
+			if (clear.jingle == 00)
+			{
+				return "32-jonathan"
+			}
+
+			else if (clear.jingle == 01)
+			{
+				return "32-joseph"
+			}
+			else if (clear.jingle == 02)
+			{
+				return "32_sonic3"
+			}
+			else if (clear.jingle == 03)
+			{
+				return "32-josuke"
+			}
+			else if (clear.jingle == 04)
+			{
+				return "32"
+			}
+			else if (clear.jingle == 05)
+			{
+				return "32-jolyne"
+			}
+	}
+	return base.Standalone.getModdedSoundKey(soundkey, sfxId, soundRegType)
+}

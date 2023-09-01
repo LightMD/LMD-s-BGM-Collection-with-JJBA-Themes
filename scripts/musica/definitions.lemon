@@ -1,0 +1,71 @@
+/*
+	DISCLAIMER
+	
+	Some code is taken from the Sonic 3 A.I.R script software distribution, Copyright (C) 2017-2023 by Eukaryot
+    The source code for Sonic 3 AIR may be found here: https://github.com/Eukaryot/sonic3air
+
+	Some code is taken from ShadowXeldron's Sonic DS Music Pack Project, Copyright (C) 2023 by ShadowXeldron
+    A copy of this code can be found here: https://github.com/ShadowXeldron/ShadowXeldrons-S3AIR-Mods/tree/main/Sonic%20DS%20Pack%20Scripts
+
+	This mod is published under the GNU GPLv3 open source software license, see LICENSE.txt
+	or https://www.gnu.org/licenses/gpl-3.0.en.html
+
+    Sonic the Hedgehog is a registered trademark of Sega. Copyright infringement is not intended.
+	If possible (and not broken af), please, purchase the original product.
+*/
+
+global u8 title
+global u8 menu.ost
+global u8 mainmenu
+global u8 clear.jingle
+global u8 i.am.invincible // Invincibility
+global u8 extra.life
+global u8 piccolino // Galaxy Mini Boss
+global u8 theboss // Act2 boss, "Sorry Boss, I meant to call the BOSS", said Kvyat in Alphamaxnova1's meme recap 
+global u8 golem // Egg Golem, SOZ2 Boss
+global u8 stromboli // LRZ2 boss
+global u8 ligma // DEZ2 boss
+global u8 bigarms
+global u8 meccanico // Mecha (Knux/Sonic, 3rd)
+global u8 faker // Mecha (s1/s2)
+global u8 biatch // Super Mecha
+global u8 dezrob
+global u8 enchilada // AIZ1
+global u8 hells.kitchen // Burning AIZ1
+global u8 blaze // AIZ2
+global u8 plz.helpme // HCZ1, Hello, I'm under the water
+global u8 unterwasserboot // HCZ2
+global u8 knedliky // MGZ1
+global u8 pierdole // MGZ2, pingwyn kurwa
+global u8 party // CNZ1
+global u8 bingo // CNZ2
+global u8 skyfall // FBZ1, let the skyfall...
+global u8 ha2rul // FBZ2, 2rul belongs to Penztaros Lorincz
+global u8 xgames // ICZ1
+global u8 elsa // ICZ2
+global u8 thx.mcd // LBZ1, thx to McDonalds the game was released earlier, as if it was Sonic '06
+global u8 kecskefasz // LBZ2, ZA HANDO
+global u8 igiulamam // MHZ1, the legendary YTPer
+global u8 oiramapap // MHZ2, the secondary channel of igiulamam
+global u8 burro // SOZ1, the keyword of the legendary italian YTP made by Roscus
+global u8 piramide // SOZ2, from the same YTP ITA
+global u8 vesuvio // LRZ1
+global u8 etna // LRZ2
+global u8 ruin // HPZ
+global u8 bossknux // VS Knuckles
+global u8 knox // Knuckles
+global u8 eggman // Eggman in HPZ
+global u8 heaven // SSZ
+global u8 pingas // DEZ1
+global u8 pingaz // DEZ2
+global u8 chaos // DDZ
+global u8 yareyare // Ending
+global u8 supra // Super
+global u8 dorifto // competition
+global u8 garda // Azure Lake
+global u8 prelog.hr // Balloon Park, a Croatian town famous for its air balloon festival
+global u8 inspector // Chrome (Inspector) Gadget
+global u8 darude // Desert Palace ft. sandstorm
+global u8 barite // Endless Cave
+global u8 willya // Continue
+global u8 uSuck // Game Over
